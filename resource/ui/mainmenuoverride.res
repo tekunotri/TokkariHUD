@@ -1557,6 +1557,25 @@
 		}
 	}
 
+	"fonttest"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"fonttest"
+			"font"			"TF2ChalkTest"
+			"labelText"		"ABABABABABA"
+			"textAlignment"	"west"
+			"xpos"			"200"
+			"ypos"			"33"
+			"wide"			"f0"
+			"tall"			"30"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"0"
+			"enabled"		"0"
+			"textinsetx"	"0"
+			"fgcolor_override"	"235 227 203 255"
+		}
+
 	"CompetitiveAccessInfoPanel"
 	{
 		"ControlName"	"CCompetitiveAccessInfoPanel"
@@ -1574,7 +1593,7 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"TitleLabel"
 			"font"			"HudFontSmallBold"
-			"labelText"		"TokkariHUD V1.3"
+			"labelText"		"TokkariHUD V1.4"
 			"textAlignment"	"west"
 			"xpos"			"130"
 			"ypos"			"65"

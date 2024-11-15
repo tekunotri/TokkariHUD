@@ -29,15 +29,35 @@
 		"tall"			"300"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"	"0"
 		"image"			"replay/thumbnails/testchalkboardlong"
 		"scaleimage"	"1"
 	
 	}
 
+	"Background"
+	{
+		"ControlName"		"ScalableImagePanel"
+		"fieldName"		"Background"
+		"xpos"			"0"
+		"ypos"			"4"
+		"zpos"			"-1"
+		"wide"			"450"
+		"tall"			"180"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"replay/thumbnails/itempanelborder"
 
+		"src_corner_height"	"22"				// pixels inside the image
+		"src_corner_width"	"22"
+	
+		"draw_corner_width"	"5"				// screen size of the corners ( and sides ), proportional
+		"draw_corner_height" 	"5"	
+	}
 
 	"Divider"
 	{

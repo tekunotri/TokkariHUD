@@ -3005,7 +3005,22 @@ Scheme
 		
 		}
 
-
+		
+		"TF2ChalkTest"
+		{
+			"1"
+			{
+				"name" 		"TF2ChalkTest"
+				"tall"		"15"
+				"antialias"	"1"
+			
+			
+			}
+		
+		
+		
+		}
+		
 		"MatchButtonFont"
 		{
 			"1"
@@ -5961,6 +5976,14 @@ Scheme
 		{
 			"font" "resource/fonts/TF2Icons.ttf"
 			"name" "TF2 Icons"
+		
+		
+		}
+		
+		"9"
+		{
+			"font" "resource/fonts/Tf2chalktest.ttf"
+			"name" "TF2ChalkTest"
 		
 		
 		}

@@ -117,9 +117,9 @@
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
-			"font"			"HudFontMedium"
-			"font_minmode"	"HudFontSmall"
-			"font_lodef"	"HudFontMediumBig"
+			"font"			"HudFontMediumSecondary"
+			"font_minmode"	"HudFontMediumSecondary"
+			"font_lodef"	"HudFontMediumSecondary"
 			"fgcolor"		"White"
 		}
 		"NumPipesLabelDropshadow"
@@ -143,9 +143,9 @@
 			"textAlignment"	"west"
 			"dulltext"		"0"
 			"brighttext"	"0"
-			"font"			"HudFontMedium"
-			"font_minmode"	"HudFontSmall"
-			"font_lodef"	"HudFontMediumBig"
+			"font"			"HudFontMediumSecondary"
+			"font_minmode"	"HudFontMediumSecondary"
+			"font_lodef"	"HudFontMediumSecondary"
 			"fgcolor"		"black"
 		}		
 	}
@@ -201,9 +201,9 @@
 			"textAlignment"	"west"
 			"dulltext"		"1"
 			"brighttext"	"0"
-			"font"			"HudFontMedium"
-			"font_minmode"	"HudFontSmall"
-			"font_lodef"	"HudFontMediumBig"
+			"font"			"HudFontMediumSecondary"
+			"font_minmode"	"HudFontMediumSecondary"
+			"font_lodef"	"HudFontMediumSecondary"
 			"fgcolor"		"White"
 		}
 		"NumPipesLabelDropshadow"
@@ -227,9 +227,9 @@
 			"textAlignment"	"west"
 			"dulltext"		"1"
 			"brighttext"	"0"
-			"font"			"HudFontMedium"
-			"font_minmode"	"HudFontSmall"
-			"font_lodef"	"HudFontMediumBig"
+			"font"			"HudFontMediumSecondary"
+			"font_minmode"	"HudFontMediumSecondary"
+			"font_lodef"	"HudFontMediumSecondary"
 			"fgcolor"		"black"
 		}			
 	}				

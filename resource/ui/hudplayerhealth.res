@@ -24,12 +24,12 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthImage"
-		"xpos"			"161"
+		"xpos"			"172"
 		"xpos_minmode"	"60"
 		"ypos"			"74"
 		"zpos"			"4"
-		"wide"			"24"
-		"tall"			"22"
+		"wide"			"0"
+		"tall"			"0"
 		"visible"		"0"
 		"enabled"		"0"
 		"scaleImage"	"1"	
@@ -59,7 +59,7 @@
 	{
 		"ControlName"			"CExLabel"
 		"fieldName"				"AmmoIcon"
-		"xpos"					"157"
+		"xpos"					"164"
 		"xpos_minmode"			"94"
 		"ypos"					"72"
 		"ypos_minmode"			"0"
@@ -83,9 +83,9 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"PlayerStatusHealthImageBG"
-		"xpos"			"160"
+		"xpos"			"171"
 		"xpos_minmode"	"60"
-		"ypos"			"72"
+		"ypos"			"73"
 		"zpos"			"3"
 		"wide"			"0"
 		"tall"			"0"
@@ -120,7 +120,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValue"
-		"xpos"			"64"
+		"xpos"			"93"
 		"xpos_minmode"	"61"
 		"ypos"			"69"	[$WIN32]
 		"ypos"			"55"	[$X360]
@@ -139,7 +139,7 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusHealthValueBG"
-		"xpos"			"62"
+		"xpos"			"91"
 		"xpos_minmode"	"61"
 		"ypos"			"72"	[$WIN32]
 		"ypos"			"55"	[$X360]
@@ -170,7 +170,7 @@
 		"labelText"		"%MaxHealth%"
 		"textAlignment"	"center"	
 		"font"			"HudFontSmall"
-		"fgcolor"		"White"
+		"fgcolor"		"TanLight"
 	}
 	"PlayerStatusBleedImage"
 	{

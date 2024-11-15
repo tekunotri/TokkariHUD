@@ -361,7 +361,7 @@ Scheme
 			"1"
 			{
 				"name"			"TF2 Secondary" // Chat font
-				"tall"			"20" // Chat fontsize
+				"tall"			"10" // Chat fontsize
 				"weight"		"400" // Chat fontweight
 				"dropshadow"	"1" // Chat shadow
 				"antialias"		"1" // Chat antialias
@@ -369,7 +369,7 @@ Scheme
 			"2"
 			{
 				"name"			"TF2 Secondary" // Chat font
-				"tall"			"20" // Chat fontsize
+				"tall"			"10" // Chat fontsize
 				"weight"		"400" // Chat fontweight
 				"dropshadow"	"1" // Chat shadow
 				"antialias"		"1" // Chat antialias
@@ -377,7 +377,7 @@ Scheme
 			"3"
 			{
 				"name"			"TF2 Secondary" // Chat font
-				"tall"			"20" // Chat fontsize
+				"tall"			"10" // Chat fontsize
 				"weight"		"400" // Chat fontweight
 				"dropshadow"	"1" // Chat shadow
 				"antialias"		"1" // Chat antialias
@@ -385,7 +385,7 @@ Scheme
 			"4"
 			{
 				"name"			"TF2 Secondary" // Chat font
-				"tall"			"20" // Chat fontsize
+				"tall"			"10" // Chat fontsize
 				"weight"		"400" // Chat fontweight
 				"dropshadow"	"1" // Chat shadow
 				"antialias"		"1" // Chat antialias
@@ -393,7 +393,7 @@ Scheme
 			"5"
 			{
 				"name"			"TF2 Secondary" // Chat font
-				"tall"			"20" // Chat fontsize
+				"tall"			"10" // Chat fontsize
 				"weight"		"400" // Chat fontweight
 				"dropshadow"	"1" // Chat shadow
 				"antialias"		"1" // Chat antialias
