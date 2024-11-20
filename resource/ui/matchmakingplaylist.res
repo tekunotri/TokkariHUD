@@ -12,14 +12,371 @@
 
 		"button_command"	"play_event"
 	}
-
+	
+	"CasualDescription"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"CasualDescription"
+			"font"			"HudFontSmall"
+			"labelText"		"Select from a variety of official maps 
+			and modes in a 12v12 format."
+			"textAlignment"	"center"
+			"xpos"			"-300"
+			"ypos"			"300"
+			"zpos"			"160"
+			"wide"			"f0"
+			"tall"			"30"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"textinsetx"	"0"
+			"fgcolor_override"	"235 227 203 255"
+		}
+	
+	"MVMDescription"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"MVMDescription"
+			"font"			"HudFontSmall"
+			"labelText"		"Team up with 5 other players in co-op
+			to fight waves of ROBOTS!"
+			"textAlignment"	"center"
+			"xpos"			"0"
+			"ypos"			"300"
+			"zpos"			"160"
+			"wide"			"f0"
+			"tall"			"30"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"textinsetx"	"0"
+			"fgcolor_override"	"235 227 203 255"
+		}
+	
+	"CasualImage"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"CasualImage"
+		"xpos"			"0"
+		"ypos"			"66"
+		"tall"			"280"
+		"wide"			"250"
+		"visible"		"1"
+		"enabled"		"1"
+		"image" 		"illustrations/training_offlinepractice"
+		"scaleImage"	"1"
+		"mouseinputenabled"	"0"
+	}	
+	
+	
+	
+	"CommunityDescription"
+		{
+			"ControlName"	"CExLabel"
+			"fieldName"		"CommunityDescription"
+			"font"			"HudFontSmall"
+			"labelText"		"Browse the internet to find 
+			community-curated servers."
+			"textAlignment"	"center"
+			"xpos"			"293"
+			"ypos"			"300"
+			"zpos"			"160"
+			"wide"			"f0"
+			"tall"			"30"
+			"autoResize"	"0"
+			"pinCorner"		"0"
+			"visible"		"1"
+			"enabled"		"1"
+			"textinsetx"	"0"
+			"fgcolor_override"	"235 227 203 255"
+		}
+	
+	"MVMImage"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"MVMImage"
+		"xpos"			"296"
+		"ypos"			"65"
+		"tall"			"168"
+		"wide"			"250"
+		"visible"		"1"
+		"enabled"		"1"
+		"image" 		"illustrations/gamemode_mvm"
+		"scaleImage"	"1"
+		"mouseinputenabled"	"0"
+	}	
+	
+	"MVMButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"MVMButton"
+		"xpos"			"296"
+		"ypos"			"275"
+		"zpos"			"160"
+		"wide"			"265"
+		"tall"			"30"
+		"visible"		"1"
+		"enabled"		"1"
+		"PaintBackgroundType"	"0"
+		
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"250"
+			"tall"			"25"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"labelText"		"Mann Vs. Machine"
+			"tabPosition"	"0"
+			"textinsetx"	"25"
+			"command"       "play_mvm"
+			"use_proportional_insets" "1"
+			"actionsignallevel"	"2"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"center"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_armed"		"UI/buttonrollover.wav"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+		}
+	}	
+	
+	
+	
+	"CommunityButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"CommunityButton"
+		"xpos"			"591"
+		"ypos"			"275"
+		"zpos"			"160"
+		"wide"			"265"
+		"tall"			"30"
+		"visible"		"1"
+		"enabled"		"1"
+		"PaintBackgroundType"	"0"
+		
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"250"
+			"tall"			"25"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"labelText"		"Community Servers"
+			"tabPosition"	"0"
+			"textinsetx"	"25"
+			"command"       "play_community"
+			"use_proportional_insets" "1"
+			"actionsignallevel"	"2"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"center"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_armed"		"UI/buttonrollover.wav"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+		}
+	}	
+	
+	"CreateServerButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"CreateServerButton"
+		"xpos"			"695"
+		"ypos"			"400"
+		"zpos"			"160"
+		"wide"			"265"
+		"tall"			"30"
+		"visible"		"1"
+		"enabled"		"1"
+		"PaintBackgroundType"	"0"
+		
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"140"
+			"tall"			"25"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"labelText"		"+ Create Server"
+			"tabPosition"	"0"
+			"textinsetx"	"25"
+			"command"       "create_server"
+			"use_proportional_insets" "1"
+			"actionsignallevel"	"2"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"center"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_armed"		"UI/buttonrollover.wav"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+		}
+	}	
+	
+	
+	"CasualButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"CasualButton"
+		"xpos"			"0"
+		"ypos"			"275"
+		"zpos"			"160"
+		"wide"			"265"
+		"tall"			"30"
+		"visible"		"1"
+		"enabled"		"1"
+		"PaintBackgroundType"	"0"
+		
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"250"
+			"tall"			"25"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"labelText"		"Casual"
+			"tabPosition"	"0"
+			"textinsetx"	"25"
+			"command"       "play_casual"
+			"use_proportional_insets" "1"
+			"actionsignallevel"	"2"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"center"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_armed"		"UI/buttonrollover.wav"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+		}
+	}	
+	
+	"MVMBackground"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"MVMBackground"
+		"xpos"			"296"
+		"ypos"			"32"
+		"zpos"			"-5"
+		"tall"			"240"
+		"wide"			"250"
+		"visible"		"1"
+		"pinCorner"		"0"
+		"autoResize"	"0"
+		"bgcolor_override"	"235 226 202 255"
+		"PaintBackgroundType"	"2"
+	}
+	
+	"CommunityBackground"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"CommunityBackground"
+		"xpos"			"590"
+		"ypos"			"32"
+		"zpos"			"-5"
+		"tall"			"240"
+		"wide"			"250"
+		"visible"		"1"
+		"pinCorner"		"0"
+		"autoResize"	"0"
+		"bgcolor_override"	"235 226 202 255"
+		"PaintBackgroundType"	"2"
+	}
+	
+	"CommunityImage"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"CommunityImage"
+		"xpos"			"590"
+		"ypos"			"44"
+		"tall"			"280"
+		"wide"			"250"
+		"visible"		"1"
+		"enabled"		"1"
+		"image" 		"illustrations/quickplay"
+		"scaleImage"	"1"
+		"mouseinputenabled"	"0"
+	}	
+	
+	"CasualBackground"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"CasualBackground"
+		"xpos"			"0"
+		"ypos"			"32"
+		"zpos"			"-5"
+		"tall"			"240"
+		"wide"			"250"
+		"visible"		"1"
+		"pinCorner"		"0"
+		"autoResize"	"0"
+		"bgcolor_override"	"235 226 202 255"
+		"PaintBackgroundType"	"2"
+	}
+	
 	"CasualEntry"
 	{
 		"ControlName"	"CPlayListEntry"
 		"fieldName"		"CasualEntry"
 		"xpos"			"0"
-		"ypos"			"3"
-		"tall"			"45"
+		"ypos"			"r-6969"
+		"tall"			"300"
 		"wide"			"255"
 		"proportionaltoparent"	"1"
 
@@ -34,15 +391,17 @@
 			"ypos"			"53"
 		}
 	}
-
+	
+	
+	
 	"CompetitiveEntry"
 	{
 		"ControlName"	"CPlayListEntry"
 		"fieldName"		"CompetitiveEntry"
 		"xpos"			"0"
-		"ypos"			"53"
-		"tall"			"45"
-		"wide"			"255"
+		"ypos"			"r-6969"
+		"tall"			"0"
+		"wide"			"0"
 		"proportionaltoparent"	"1"
 
 		"image_name"		"main_menu/main_menu_button_competitive"
@@ -62,7 +421,7 @@
 		"ControlName"	"CPlayListEntry"
 		"fieldName"		"MvMEntry"
 		"xpos"			"0"
-		"ypos"			"103"
+		"ypos"			"r-6969"
 		"tall"			"45"
 		"wide"			"255"
 		"proportionaltoparent"	"1"
@@ -84,7 +443,7 @@
 		"ControlName"	"CPlayListEntry"
 		"fieldName"		"ServerBrowserEntry"
 		"xpos"			"0"
-		"ypos"			"153"
+		"ypos"			"r-6969"
 		"tall"			"45"
 		"wide"			"255"
 		"proportionaltoparent"	"1"
@@ -105,7 +464,7 @@
 		"ControlName"	"CPlayListEntry"
 		"fieldName"		"TrainingEntry"
 		"xpos"			"0"
-		"ypos"			"203"
+		"ypos"			"r-6969"
 		"tall"			"45"
 		"wide"			"255"
 		"proportionaltoparent"	"1"
@@ -120,13 +479,15 @@
 			"ypos"			"253"
 		}
 	}
-
+	
+	
+	
 	"CreateServerEntry"
 	{
 		"ControlName"	"CPlayListEntry"
 		"fieldName"		"CreateServerEntry"
 		"xpos"			"0"
-		"ypos"			"253"
+		"ypos"			"r-6969"
 		"tall"			"45"
 		"wide"			"255"
 		"proportionaltoparent"	"1"

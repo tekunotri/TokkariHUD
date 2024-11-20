@@ -412,12 +412,12 @@
 		"xpos"			"cs-0.5--96"
 		"ypos"			"cs-0.5--195"
 		"zpos"			"1003"
-		"wide"			"15"
-		"tall"			"15"
+		"wide"			"0"
+		"tall"			"0"
 		"autoResize"	"0"
 		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"	"0"
 		"textinsetx"	"25"
 		"labelText"		""
@@ -1593,7 +1593,7 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"TitleLabel"
 			"font"			"HudFontSmallBold"
-			"labelText"		"TokkariHUD V1.4"
+			"labelText"		"TokkariHUD V1.5"
 			"textAlignment"	"west"
 			"xpos"			"130"
 			"ypos"			"65"
@@ -4147,6 +4147,73 @@
         }
     }
 	
+	"DiscordButton"
+    {
+        "pin_to_sibling"                                            "bh_BottomPin9"
+        "pin_corner_to_sibling"                                     "PIN_TOPLEFT"
+        "pin_to_sibling_corner"                                     "0"
+
+        "ControlName"                                               "EditablePanel"
+        "fieldname"                                                 "DiscordButton"
+        "xpos"                                                      "0"
+        "ypos"                                                      "0"
+		"zpos"														"5"
+        "wide"                                                      "33"
+        "tall"                                                      "30"
+        "visible"                                                   "0"
+
+        "SubButton"
+        {
+            "ControlName"                                           "CExImageButton"
+            "fieldName"                                             "SubButton"
+            "xpos"                                                  "0"
+            "ypos"                                                  "0"
+            "wide"                                                  "33"
+            "tall"                                                  "30"
+            "autoResize"                                            "0"
+            "pinCorner"                                             "3"
+            "visible"                                               "1"
+            "enabled"                                               "1"
+            "tabPosition"                                           "0"
+            "textinsetx"                                            "100"
+            "use_proportional_insets"                               "1"
+            "font"                                                  "bh_Font12"
+            "textAlignment"                                         "west"
+            "dulltext"                                              "0"
+            "brighttext"                                            "0"
+            "default"                                               "1"
+            "sound_depressed"                                       "UI/buttonclick.wav"
+            "sound_released"                                        "UI/buttonclickrelease.wav"
+
+            "textAlignment"                                         "Center"
+            "fillcolor"                                             "bh_gray"
+
+            "border_default"                                        "MainMenuButtonDefault"
+            "border_armed"                                          "MainMenuButtonArmed"
+            "paintbackground"                                       "0"
+            "defaultFgColor_override"                               "bh_white"
+            "armedFgColor_override"                                 "bh_red"
+            "image_drawcolor"                                       "255 255 255 255"
+            "image_armedcolor"                                      "240 134 49 255"
+
+            "SubImage"
+            {
+               
+					"ControlName"	"ImagePanel"
+					"fieldName"		"SubImage"
+					"xpos"			"2"
+					"ypos"			"1"
+					"zpos"			"20"
+					"wide"			"29"
+					"tall"			"29"
+					"visible"		"1"
+					"enabled"		"1"
+					"image"			"replay/thumbnails/glyph_discord"
+					"scaleImage"	"1"
+            }
+        }
+    }
+	
 	
 	"bh_BottomPin"
     {
@@ -4260,7 +4327,19 @@
         "bgcolor_override"  "0 0 0 0"
     }
 
-
+	"bh_BottomPin9"
+    {
+        "ControlName" "Label"
+        "fieldName"   "bh_BottomPin9"
+        "xpos"        "780"
+        "ypos"        "436"
+        "zpos"        "0"
+        "wide"        "100"
+        "tall"        "0"
+        "visible"     "1"
+        "enabled"     "1"
+        "bgcolor_override"  "0 0 0 0"
+    }
 	
 
 	

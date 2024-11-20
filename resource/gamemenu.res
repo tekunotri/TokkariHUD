@@ -97,6 +97,14 @@
         "tooltip" 													"Workshop"       
 	}
 	
+	"DiscordButton"
+	{
+		"label"                                                     ""
+        "command"                                                   "url https://discord.gg/4nYSFYyqYq"
+        "OnlyAtMenu"                                                "0"
+        "tooltip" 													"Discord"       
+	}
+	
 	"MutePlayersButton"
 	{
 		"label"			""

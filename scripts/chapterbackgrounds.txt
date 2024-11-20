@@ -1,16 +1,4 @@
 "chapters"
 {
-	"1"	"background_upward"
-	"2"	"background_upward"
-	"3"	"background_2fort"
-	"4"	"background_2fort"
-
-}
-"BackgroundMaps"
-{
-	"1"	"background_upward"
-	"2"	"background_upward"
-	"3"	"background_2fort"
-	"4"	"background_2fort"
-	
+	1	"background_dblur"
 }
