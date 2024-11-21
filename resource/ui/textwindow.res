@@ -16,22 +16,6 @@
 		"settitlebarvisible"	"0"
 	}
 	
-	"MenuBoxBG"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"MenuBoxBG"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"5"
-		"wide"			"f0"
-		"tall"			"400"
-		"visible"		"1"
-		"pinCorner"		"0"
-		"autoResize"	"0"
-		"bgcolor_override"	"0 0 0 240"
-		"PaintBackgroundType"	"2"
-	}
-	
 	"TFMessageTitle"
 	{
 		"ControlName"	"CExLabel"
@@ -99,7 +83,7 @@
 	
 	"ok"
 	{
-		"ControlName"		"CExButton"
+		"ControlName"	"CExButton"
 		"fieldName"		"ok"
 		"xpos"			"r190"
 		"ypos"			"r40"
@@ -118,35 +102,37 @@
 		"wrap"		"0"
 		"command"		"okay"
 		"default"		"1"
-		"font"			"MenuSmallFont"
+		"font"			"HudFontSmallBold"
 		
-		"border_default"	"MainMenuButtonDefault"
-		"border_armed"		"MainMenuButtonArmed"
-		"paintbackground"	"0"
-		"defaultFgColor_override" "46 43 42 255"
-		"armedFgColor_override" "235 226 202 255"
-		"depressedFgColor_override" "46 43 42 255"
+		
 		
 	}
 	
-	"ContinueButton" [$WIN32] 
+	"okbutton2" [$WIN32]
 	{
 		"ControlName"	"CExButton"
-		"fieldName"		"ContinueButton"
-		"xpos"			"r180"
-		"ypos"			"r38"
+		"fieldName"		"okbutton2"
+		"xpos"			"r190"
+		"xpos_lodef"			"r222"
+		"xpos_hidef"			"r232"
+		"ypos"			"r40"
+		"ypos_lodef"			"r64"
+		"ypos_hidef"			"r54"
 		"zpos"			"6"
 		"wide"			"150"
-		"tall"			"25"
+		"tall"			"30"
 		"autoResize"	"0"
 		"pinCorner"		"2"
 		"visible"		"1"
 		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"Continue"
+		"labelText"		"#TF_Continue"
 		"textAlignment"	"center"
-		"Command"		"okay"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"command"		"okay"
+		"default"		"1"
 		"font"			"HudFontSmallBold"
+		"fgcolor"		"Black"
 		
 		"border_default"	"MainMenuButtonDefault"
 		"border_armed"		"MainMenuButtonArmed"
@@ -154,8 +140,8 @@
 		"defaultFgColor_override" "46 43 42 255"
 		"armedFgColor_override" "235 226 202 255"
 		"depressedFgColor_override" "46 43 42 255"
+		
 	}
-	
 	
 	"MenuBG"
 	{
@@ -168,8 +154,8 @@
 		"tall"			"480"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"fov"			"20"
 		
 		"model"
@@ -192,34 +178,17 @@
 		"xpos"			"0"
 		"ypos"			"r50"
 		"zpos"			"5"
-		"wide"			"0"
-		"tall"			"0"
+		"wide"			"f0"
+		"tall"			"50"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"tabPosition"	"0"	
 		"image"			"loadout_bottom_gradient"
 		"tileImage"		"1"
 		"PaintBackgroundType"	"0"
 	}						
-	
-	"MenuBoxBG"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"MenuBoxBG"
-		"xpos"			"0"
-		"ypos"			"0"
-		"zpos"			"-4"
-		"wide"			"10000"
-		"tall"			"10000"
-		"visible"		"1"
-		"pinCorner"		"0"
-		"autoResize"	"0"
-		"bgcolor_override"	"46 43 42 240"
-		"PaintBackgroundType"	"2"
-	}
-	
 	
 	"MessageTitle"
 	{

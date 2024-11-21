@@ -1,391 +1,929 @@
-#base "SourceSchemeBase.res"
-
+///////////////////////////////////////////////////////////
+// Tracker scheme resource file
+//
+// sections:
+//		Colors			- all the colors used by the scheme
+//		BaseSettings	- contains settings for app to use to draw controls
+//		Fonts			- list of all the fonts used by app
+//		Borders			- description of all the borders
+//
+///////////////////////////////////////////////////////////
 Scheme
 {
+	//////////////////////// COLORS ///////////////////////////
+	// color details
+	// this is a list of all the colors used by the scheme
 	Colors
 	{
-	
-		"G_ActiveWindow"			"46 43 42 255" // Active window bg color
-		"G_InctiveWindow"			"46 43 42 255" // Inactive window bg color
-		"G_TitleBg"					"46 43 42 255" // Title bg color
-		"G_TitleText"				"235 226 202 255" // Title text color
-		"G_Highlight"				"159 159 159 200" // Highlight color
-		"G_ConsoleBg"				"46 43 42 255" // Console bg color
-		"G_ListBg"					"0 0 0 255" // List bg color
-		"G_Border"					"0 0 0 120" // Border color
-		"G_Text"					"255 255 255 255" // Text color
-		"G_HighlightText"			"255 255 255 255" // Highlight text color
-		"G_SelectedText"			"255 255 255 255" // Selected text color
-		"G_DisabledText"			"220 206 199 150" // Disabled text color
-		"G_ButtonBg"				"255 255 255 255" // Button bg color
-		"G_ButtonText"				"46 43 42 255" // Button text color
-		"G_ButtonHoverBg"			"159 159 159 200" // Button hover bg color
-		"G_ButtonHoverText"			"255 255 255 255" // Button hover text color
-		"G_InputBg"					"0 0 0 255" // Input bg color
-		"G_Light"					"255 255 255 50"
-		"G_Dark"					"0 0 0 50"
-	
-		// ------------------------------------------
-		
-	    "TFDarkBrown"               "60 56 53 255"
-	    "TFDarkBrownTransparent"    "60 56 53 190"
-	    "TFTanBright"               "236 227 203 150"
-	    "TFTanLight"                "201 188 162 150"
-	    "TFTanMedium"               "131 121 104 150"
-	    "TFTanLightBright"          "229 223 211 90"
-	    "TFTanLightDark"            "96 90 78 90"
-	    "TFOrangeBright"            "156 82 33 255"
-	    "TFTextBright"              "251 236 203 150"
-	    "TFTextLight"               "201 188 162 255"
-	    "TFTextMedium"              "131 121 104 255"
-	    "TFTextMediumDark"          "104 96 83 255"
-	    "TFTextBlack"               "42 39 37 255"
-	    "TFTextDull"                "131 121 104 255"
-	    "TFMediumBrown"				"69 64 58 255"
+		// base colors
+		"White"				"255 255 255 255"
+		"OffWhite"			"216 216 216 255"
+		"DullWhite"			"142 142 142 255"
+		"Orange"			"255 155 0 255"
+		"TransparentBlack"		"0 0 0 128"
+		"Black"				"0 0 0 255"
 
-	    "QuickListBGDeselected"		"0 0 0 0"
-	    "QuickListBGSelected"       "178 82 22 255" // Highlight color
-	    
-	    "Blank"				"0 0 0 0"
-	    
-	    // background colors
-		"ControlBG"			"76 88 68 255"		// background color of controls
-		"ControlDarkBG"		"90 106 80 255"		// darker background color; used for background of scrollbars
-		"WindowBG"			"62 70 55 255"		// background color of text edit panes (chat, text entries, etc.)
-		"SelectionBG"		"90 84 75 255"		// background color of any selected text or menu item
-		"SelectionBG2"		"69 64 57 255"		// selection background in window w/o focus
-		"ListBG"			"39 36 34 255"		// background of server browser, buddy list, etc.
+		"Blank"				"0 0 0 0"
 	}
+
+	///////////////////// BASE SETTINGS ////////////////////////
+	//
+	// default settings for all panels
+	// controls use these to determine their settings
 	BaseSettings
 	{
+		// vgui_controls color specifications
+		Border.Bright					"200 200 200 196"	// the lit side of a control
+		Border.Dark						"40 40 40 196"		// the dark/unlit side of a control
+		Border.Selection				"0 0 0 196"			// the additional border color for displaying the default/selected button
+
+		Button.TextColor				"255 255 255 255"
+		Button.BgColor					"0 0 0 0"
+		Button.ArmedTextColor			"255 255 255 255"
+		Button.ArmedBgColor				"0 0 0 0"
+		Button.DepressedTextColor		"255 255 255 255"
+		Button.DepressedBgColor			"0 0 0 0"
+		Button.FocusBorderColor			"0 0 0 255"
+		
+		CheckButton.TextColor			"216 216 216 255"
+		CheckButton.SelectedTextColor	"255 255 255 255"
+		CheckButton.BgColor				"0 0 0 128"
+		CheckButton.Border1  			"Border.Dark" 		// the left checkbutton border
+		CheckButton.Border2  			"Border.Bright"		// the right checkbutton border
+		CheckButton.Check				"255 255 255 255"				// color of the check itself
+
+		ComboBoxButton.ArrowColor		"142 142 142 255"
+		ComboBoxButton.ArmedArrowColor	"255 255 255 255"
+		ComboBoxButton.BgColor			"0 0 0 0"
+		ComboBoxButton.DisabledBgColor	"0 0 0 0"
+
+		Frame.TitleTextInsetX			16
+		Frame.ClientInsetX				8
+		Frame.ClientInsetY				6
+		Frame.BgColor					"160 160 160 255"
+		Frame.OutOfFocusBgColor			"160 160 160 255"
+		Frame.FocusTransitionEffectTime	"0.3"	// time it takes for a window to fade in/out on focus/out of focus
+		Frame.TransitionEffectTime		"0.3"	// time it takes for a window to fade in/out on open/close
+		Frame.AutoSnapRange				"0"
+		FrameGrip.Color1				"200 200 200 196"
+		FrameGrip.Color2				"0 0 0 196"
+		FrameTitleButton.FgColor		"200 200 200 196"
+		FrameTitleButton.BgColor		"0 0 0 0"
+		FrameTitleButton.DisabledFgColor	"255 255 255 192"
+		FrameTitleButton.DisabledBgColor	"0 0 0 0"
+		FrameSystemButton.FgColor		"0 0 0 0"
+		FrameSystemButton.BgColor		"0 0 0 0"
+		FrameSystemButton.Icon			""
+		FrameSystemButton.DisabledIcon	""
+		FrameTitleBar.Font				"UiBold"
+		FrameTitleBar.TextColor			"255 255 255 255"
+		FrameTitleBar.BgColor			"0 0 0 0"
+		FrameTitleBar.DisabledTextColor	"255 255 255 192"
+		FrameTitleBar.DisabledBgColor	"0 0 0 0"
+
+		GraphPanel.FgColor				"255 255 255 255"
+		GraphPanel.BgColor				"0 0 0 255"
+
+		Label.TextDullColor				"142 142 142 255"
+		Label.TextColor					"216 216 216 255"
+		Label.TextBrightColor			"255 255 255 255"
+		Label.SelectedTextColor			"255 255 255 255"
+		Label.BgColor					"0 0 0 0"
+		Label.DisabledFgColor1			"117 117 117 255"
+		Label.DisabledFgColor2			"30 30 30 255"
+
+		ListPanel.TextColor					"216 216 216 255"
+		ListPanel.TextBgColor				"0 0 0 0"
+		ListPanel.BgColor					"0 0 0 128"
+		ListPanel.SelectedTextColor			"0 0 0 255"
+		ListPanel.SelectedBgColor			"255 155 0 255"
+		ListPanel.SelectedOutOfFocusBgColor	"255 155 0 128"
+		ListPanel.EmptyListInfoTextColor	"216 216 216 255"
+
+		Menu.TextColor					"255 255 255 255"
+		Menu.BgColor					"160 160 160 64"
+		Menu.ArmedTextColor				"0 0 0 255"
+		Menu.ArmedBgColor				"255 155 0 255"
+		Menu.TextInset					"6"
+
+		Panel.FgColor					"142 142 142 255"
+		Panel.BgColor					"0 0 0 0"
+
+		ProgressBar.FgColor				"255 255 255 255"
+		ProgressBar.BgColor				"0 0 0 255"
+
+		PropertySheet.TextColor			"216 216 216 255"
+		PropertySheet.SelectedTextColor	"255 255 255 255"
+		PropertySheet.TransitionEffectTime	"0.25"	// time to change from one tab to another
+
+		RadioButton.TextColor			"142 142 142 255"
+		RadioButton.SelectedTextColor	"255 255 255 255"
+
+		RichText.TextColor				"216 216 216 255"
+		RichText.BgColor				"0 0 0 128"
+		RichText.SelectedTextColor		"0 0 0 255"
+		RichText.SelectedBgColor		"255 155 0 255"
+
+		ScrollBar.Wide					17
+
+		ScrollBarButton.FgColor				"255 255 255 255"
+		ScrollBarButton.BgColor				"0 0 0 0"
+		ScrollBarButton.ArmedFgColor		"255 255 255 255"
+		ScrollBarButton.ArmedBgColor		"0 0 0 0"
+		ScrollBarButton.DepressedFgColor	"255 255 255 255"
+		ScrollBarButton.DepressedBgColor	"0 0 0 0"
+
+		ScrollBarSlider.FgColor				"0 0 0 0"			// nob color
+		ScrollBarSlider.BgColor				"255 255 255 64"	// slider background color
+
+		SectionedListPanel.HeaderTextColor	"255 255 255 255"
+		SectionedListPanel.HeaderBgColor	"0 0 0 0"
+		SectionedListPanel.DividerColor		"0 0 0 255"
+		SectionedListPanel.TextColor		"142 142 142 255"
+		SectionedListPanel.BrightTextColor	"255 255 255 255"
+		SectionedListPanel.BgColor			"0 0 0 128"
+		SectionedListPanel.SelectedTextColor			"0 0 0 255"
+		SectionedListPanel.SelectedBgColor				"255 155 0 255"
+		SectionedListPanel.OutOfFocusSelectedTextColor	"0 0 0 255"
+		SectionedListPanel.OutOfFocusSelectedBgColor	"255 155 0 128"
+
+		Slider.NobColor				"108 108 108 255"
+		Slider.TextColor			"180 180 180 255"
+		Slider.TrackColor			"31 31 31 255"
+		Slider.DisabledTextColor1	"117 117 117 255"
+		Slider.DisabledTextColor2	"30 30 30 255"
+
+		TextEntry.TextColor			"216 216 216 255"
+		TextEntry.BgColor			"0 0 0 128"
+		TextEntry.CursorColor		"216 216 216 255"
+		TextEntry.DisabledTextColor	"142 142 142 255"
+		TextEntry.DisabledBgColor	"0 0 0 0"
+		TextEntry.SelectedTextColor	"0 0 0 255"
+		TextEntry.SelectedBgColor	"255 155 0 255"
+		TextEntry.OutOfFocusSelectedBgColor	"255 155 0 128"
+		TextEntry.FocusEdgeColor	"0 0 0 196"
+
+		ToggleButton.SelectedTextColor	"255 255 255 255"
+
+		Tooltip.TextColor			"0 0 0 196"
+		Tooltip.BgColor				"255 155 0 255"
+
+		TreeView.BgColor			"0 0 0 128"
+
+		WizardSubPanel.BgColor		"0 0 0 0"
+
 		// scheme-specific colors
-		Border.Bright					"G_Border"	// the lit side of a control
-		Border.Dark						"G_Border"	// the dark/unlit side of a control
-		Border.Selection				"G_Border"	// the additional border color for displaying the default/selected button
-
-		// Buttons and tabs
-		Button.TextColor				"G_ButtonText"
-		Button.BgColor					"G_ButtonBg"
-		Button.ArmedTextColor			"G_ButtonHoverText"
-		Button.ArmedBgColor				"G_ButtonHoverBg"
-		Button.DepressedTextColor		"G_ButtonHoverText"
-		Button.DepressedBgColor			"G_ButtonHoverBg"	
-		Button.FocusBorderColor			"G_ButtonHoverBg"
-		
-		// Tab texts
-		PropertySheet.TextColor			"G_ButtonText"
-		PropertySheet.SelectedTextColor	"G_ButtonText"
-		
-		// Console background
-		RichText.BgColor				"G_ConsoleBg"
-		
-		// Progress bar
-		ProgressBar.FgColor				"G_Text"
-		ProgressBar.BgColor				"G_ListBg"
-		
-		// Checkboxes
-		CheckButton.TextColor			"G_Text"
-		CheckButton.SelectedTextColor	"G_SelectedText"
-		CheckButton.BgColor				"G_InputBg"
-		CheckButton.HighlightFgColor	"G_SelectedText"
-		CheckButton.ArmedBgColor		"Blank"
-		CheckButton.DepressedBgColor	"Blank"
-		CheckButton.Border1  			"Border.Dark" 	// the left checkbutton border
-		CheckButton.Border2  			"Border.Bright"	// the right checkbutton border
-		CheckButton.Check				"G_Highlight"	// color of the check itself
-		CheckButton.DisabledBgColor	    "G_InputBg"
-
-		ToggleButton.SelectedTextColor	"G_Text"
-		
-		// Dropdowns
-		ComboBoxButton.ArrowColor		"G_Text"
-		ComboBoxButton.ArmedArrowColor	"G_SelectedText"
-		ComboBoxButton.BgColor			"Blank"
-		ComboBoxButton.DisabledBgColor	"Blank"
-		
-		// Radio buttons
-		RadioButton.TextColor			"G_Text"
-		RadioButton.SelectedTextColor	"G_SelectedText"
-		RadioButton.ArmedTextColor		"G_SelectedText"
-		
-		// Frames
-		Frame.BgColor					"G_ActiveWindow"
-		Frame.OutOfFocusBgColor			"G_InctiveWindow"
-		FrameGrip.Color1				"G_Light"
-		FrameGrip.Color2				"G_Dark"
-		FrameTitleButton.FgColor		"G_TitleText"
-
-		// Frame titles
-		FrameTitleBar.Font				"G_DefaultSmall"
-		FrameTitleBar.TextColor			"G_TitleText"
-		FrameTitleBar.DisabledTextColor	"G_TitleText"
-		FrameTitleBar.BgColor			"G_TitleBg"
-		
-		// Labels
-		Label.TextDullColor				"TFTextDull"
-		Label.TextColor					"G_Text"
-		Label.TextBrightColor			"G_SelectedText"
-		Label.SelectedTextColor			"G_SelectedText"
-		Label.BgColor					"Blank"
-		Label.DisabledFgColor1			"G_DisabledText"	
-		Label.DisabledFgColor2			"Blank"
-		
-		// List panels
-		ListPanel.TextColor					"G_Text"
-		ListPanel.SelectedTextColor			"G_HighlightText"
-		ListPanel.BgColor					"G_ListBg"
-		ListPanel.SelectedBgColor			"G_Highlight"
-		ListPanel.SelectedOutOfFocusBgColor	"G_Highlight"
-		
-		MainMenu.TextColor			"G_Text"			[$WIN32]
-		MainMenu.ArmedTextColor		"G_SelectedText"	[$WIN32]
+		MainMenu.TextColor			"255 255 255 255"
+		MainMenu.ArmedTextColor		"200 200 200 255"
+		MainMenu.DepressedTextColor	"192 186 80 255"
+		MainMenu.MenuItemHeight		"30"
 		MainMenu.Inset				"32"
-		
-		Menu.TextInset			"6"
-		Menu.TextColor			"G_Text"
-		Menu.BgColor			"G_ListBg"
-		Menu.ArmedTextColor		"G_HighlightText"
-		Menu.ArmedBgColor		"G_Highlight"
-		Menu.DividerColor		"BorderDark"
-		
-		ScrollBarButton.FgColor				"G_ButtonText"
-		ScrollBarButton.BgColor				"G_ButtonBg"
-		ScrollBarButton.ArmedFgColor		"G_ButtonHoverText"
-		ScrollBarButton.ArmedBgColor		"G_ButtonHoverBg"
-		ScrollBarButton.DepressedFgColor	"G_ButtonHoverText"
-		ScrollBarButton.DepressedBgColor	"G_ButtonHoverBg"
+		MainMenu.Backdrop			"0 0 0 156"
 
-		ScrollBarSlider.BgColor				"G_Dark"		// this isn't really used
-		ScrollBarSlider.FgColor				"G_ButtonBg"	// handle with which the slider is grabbed
-		
-		Slider.NobColor				"G_ButtonBg"		
-		Slider.TextColor			"G_ButtonText"
-		Slider.TrackColor			"G_Dark"
-		Slider.DisabledTextColor1	"TFTextMediumDark"
-        Slider.DisabledTextColor2	"Blank"
-		
-		// Text fields
-		TextEntry.TextColor				"G_Text"
-		TextEntry.SelectedTextColor		"G_HighlightText"
-		TextEntry.DisabledTextColor		"G_DisabledText"
-		TextEntry.SelectedBgColor		"G_Highlight"
-		TextEntry.BgColor				"G_InputBg"
-		
-		// Selection list (options)
-		SectionedListPanel.TextColor			"G_Text"
-		SectionedListPanel.BrightTextColor		"G_Text"
-		SectionedListPanel.BgColor				"G_ListBg"
-		SectionedListPanel.SelectedTextColor	"G_HighlightText"
-		SectionedListPanel.SelectedBgColor		"G_Highlight"
-		SectionedListPanel.OutOfFocusSelectedTextColor	"G_HighlightText"
-		SectionedListPanel.OutOfFocusSelectedBgColor	"G_Highlight"
+		Console.TextColor			"216 216 216 255"
+		Console.DevTextColor		"255 255 255 255"
+
+		NewGame.TextColor			"255 255 255 255"
+		NewGame.FillColor			"0 0 0 255"
+		NewGame.SelectionColor		"255 155 0 255"
+		NewGame.DisabledColor		"128 128 128 196"
 	}
-	
+
+	//
+	//////////////////////// FONTS /////////////////////////////
+	//
+	// describes all the fonts
 	Fonts
 	{
-		"MainMenuFont"
+		// fonts are used in order that they are listed
+		// fonts listed later in the order will only be used if they fulfill a range not already filled
+		// if a font fails to load then the subsequent fonts will replace
+		// fonts are used in order that they are listed
+		"DebugFixed"
 		{
-			"1"	[$WIN32]
+			"1"
 			{
-				"name"		"TF2 Build"
-				"tall"		"18"
+				"name"		"Courier New"
+				"tall"		"10"
 				"weight"	"500"
-				"additive"	"0"
 				"antialias" "1"
+			}
+		}
+		// fonts are used in order that they are listed
+		"DebugFixedSmall"
+		{
+			"1"
+			{
+				"name"		"Courier New"
+				"tall"		"7"
+				"weight"	"500"
+				"antialias" "1"
+			}
+		}
+		"DefaultFixedOutline"
+		{
+			"1"
+			{
+				"name"		"Lucida Console"
+				"tall"		"10"
+				"weight"	"0"
+				"outline"	"1"
+			}
+		}
+		"Default"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"500"
+			}
+		}
+		"DefaultBold"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"1000"
+			}
+		}
+		"DefaultUnderline"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"500"
+				"underline" "1"
+			}
+		}
+		"DefaultSmall"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"12"
+				"weight"	"0"
+			}
+		}
+		"DefaultSmallDropShadow"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"13"
+				"weight"	"0"
+				"dropshadow" "1"
+			}
+		}
+		"DefaultVerySmall"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"12"
+				"weight"	"0"
+			}
+		}
+
+		"DefaultLarge"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"18"
+				"weight"	"0"
+			}
+		}
+		"UiBold"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"12"
+				"weight"	"1000"
 			}
 		}
 		"MenuLarge"
 		{
-			"1"	[$X360]
-			{
-				"tall_hidef"		"24"
-			}
-		}
-
-		"ServerBrowserTitle"
-		{
 			"1"
 			{
-				"name"		"TF2 Build"
-				"tall"		"35"
-				"tall_lodef"	"40"
-				"weight"	"500"
-				"additive"	"0"
+				"name"		"Verdana"
+				"tall"		"16"
+				"weight"	"600"
 				"antialias" "1"
 			}
 		}
 
-		"Default" [$OSX]
+		"ConsoleText"
 		{
 			"1"
 			{
-				"name"		"Verdana"
-				"tall"		"14"
-				"weight"	"500"
-			}
-		}
-		
-		"G_DefaultSmall"
-		{
-			"1"
-			{
-				"name"		"Verdana"
-				"tall"		"14"
+				"name"		"Lucida Console"
+				"tall"		"10"
 				"weight"	"500"
 			}
 		}
 
-		"ServerBrowserSmall"
+		// this is the symbol font
+		"Marlett"
 		{
 			"1"
 			{
-				"name"		"Tahoma"
-				"tall"		"16"
+				"name"		"Marlett"
+				"tall"		"14"
 				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"480 599"
-			}
-			"2"
-			{
-				"name"		"Tahoma"
-				"tall"		"16"
-				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"600 767"
-			}
-			"3"
-			{
-				"name"		"Tahoma"
-				"tall"		"16"
-				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"768 1023"
-				"antialias"	"1"
-			}
-			"4"
-			{
-				"name"		"Tahoma"
-				"tall"		"19"
-				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"1024 1199"
-				"antialias"	"1"
-			}
-			"5"
-			{
-				"name"		"Tahoma"
-				"tall"		"19"
-				"weight"	"0"
-				"range"		"0x0000 0x017F" //	Basic Latin, Latin-1 Supplement, Latin Extended-A
-				"yres"	"1200 6000"
-				"antialias"	"1"
-			}
-		}
-		
-				
-		AchievementItemTitle	[$WIN32]
-		{
-			"1"
-			{
-				"name"		"Arial" [!$OSX]
-				"name"		"Verdana Bold" [$OSX]
-				"weight"		"1500"
-				"tall"			"16" [!$OSX]
-				"tall"			"18" [$OSX]
-				"antialias"		"1"
-			}
-		}
-		
-		AchievementItemTitleLarge	[$WIN32]
-		{
-			"1"
-			{
-				"name"		"Arial" [!$OSX]
-				"name"		"Verdana Bold" [$OSX]
-				"weight"		"1500"
-				"tall"			"18" [!$OSX]
-				"tall"			"19" [$OSX]
-				"antialias"		"1"
-			}
-		}
-		
-		AchievementItemDescription	[$WIN32]
-		{
-			"1"
-			{
-				"name"		"Arial" [!$OSX]
-				"name"		"Verdana" [$OSX]
-				"weight"		"1000"
-				"tall"			"14" [!$OSX]
-				"tall"			"12" [$OSX]
-				"antialias"		"1" [!$OSX]
+				"symbol"	"1"
 			}
 		}
 
+		"Trebuchet24"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"24"
+				"weight"	"900"
+			}
+		}
+
+
+		"Trebuchet20"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"20"
+				"weight"	"900"
+			}
+		}
+
+		"Trebuchet18"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"18"
+				"weight"	"900"
+			}
+		}
+
+		// HUD numbers
+		// We use multiple fonts to 'pulse' them in the HUD, hence the need for many of near size
+		"HUDNumber"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"40"
+				"weight"	"900"
+			}
+		}
+		"HUDNumber1"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"41"
+				"weight"	"900"
+			}
+		}
+		"HUDNumber2"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"42"
+				"weight"	"900"
+			}
+		}
+		"HUDNumber3"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"43"
+				"weight"	"900"
+			}
+		}
+		"HUDNumber4"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"44"
+				"weight"	"900"
+			}
+		}
+		"HUDNumber5"
+		{
+			"1"
+			{
+				"name"		"Trebuchet MS"
+				"tall"		"45"
+				"weight"	"900"
+			}
+		}
+		"DefaultFixed"
+		{
+			"1"
+			{
+				"name"		"Lucida Console"
+				"tall"		"10"
+				"weight"	"0"
+			}
+//			"1"
+//			{
+//				"name"		"FixedSys"
+//				"tall"		"20"
+//				"weight"	"0"
+//			}
+		}
+
+		"DefaultFixedDropShadow"
+		{
+			"1"
+			{
+				"name"		"Lucida Console"
+				"tall"		"10"
+				"weight"	"0"
+				"dropshadow" "1"
+			}
+//			"1"
+//			{
+//				"name"		"FixedSys"
+//				"tall"		"20"
+//				"weight"	"0"
+//			}
+		}
+
+		"CloseCaption_Normal"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"500"
+			}
+		}
+		"CloseCaption_Italic"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"500"
+				"italic"	"1"
+			}
+		}
+		"CloseCaption_Bold"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"900"
+			}
+		}
+		"CloseCaption_BoldItalic"
+		{
+			"1"
+			{
+				"name"		"Tahoma"
+				"tall"		"16"
+				"weight"	"900"
+				"italic"	"1"
+			}
+		}
+
+		TitleFont
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"72"
+				"weight"	"400"
+				"antialias"	"1"
+				"custom"	"1"
+			}
+		}
+
+		TitleFont2
+		{
+			"1"
+			{
+				"name"		"HalfLife2"
+				"tall"		"120"
+				"weight"	"400"
+				"antialias"	"1"
+				"custom"	"1"
+			}
+		}
 	}
-	
+
+	//
+	//////////////////// BORDERS //////////////////////////////
+	//
+	// describes all the border types
+	Borders
+	{
+		BaseBorder		DepressedBorder
+		ButtonBorder	RaisedBorder
+		ComboBoxBorder	DepressedBorder
+		MenuBorder		RaisedBorder
+		BrowserBorder	DepressedBorder
+		PropertySheetBorder	RaisedBorder
+
+		FrameBorder
+		{
+			// rounded corners for frames
+			"backgroundtype" "2"
+		}
+
+		DepressedBorder
+		{
+			"inset" "0 0 1 1"
+			Left
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "0 1"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "1 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "0 0"
+				}
+			}
+		}
+		RaisedBorder
+		{
+			"inset" "0 0 1 1"
+			Left
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "0 1"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "0 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "0 1"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		TitleButtonBorder
+		{
+			"backgroundtype" "0"
+		}
+
+		TitleButtonDisabledBorder
+		{
+			"backgroundtype" "0"
+		}
+
+		TitleButtonDepressedBorder
+		{
+			"backgroundtype" "0"
+		}
+
+		ScrollBarButtonBorder
+		{
+			"inset" "2 2 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "0 1"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "1 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "0 0"
+				}
+			}
+		}
+		
+		ScrollBarButtonDepressedBorder
+		{
+			"inset" "2 2 0 0"
+			Left
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "0 1"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "1 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "0 0"
+				}
+			}
+		}
+
+		TabBorder
+		{
+			"inset" "0 0 1 1"
+			Left
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "0 1"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "1 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "0 0"
+				}
+			}
+
+		}
+
+		TabActiveBorder
+		{
+			"inset" "0 0 1 0"
+			Left
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "0 0"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "1 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "0 0"
+				}
+			}
+
+		}
+
+
+		ToolTipBorder
+		{
+			"inset" "0 0 1 0"
+			Left
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "0 0"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "1 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "0 0"
+				}
+			}
+		}
+
+		// this is the border used for default buttons (the button that gets pressed when you hit enter)
+		ButtonKeyFocusBorder
+		{
+			"inset" "0 0 1 1"
+			Left
+			{
+				"1"
+				{
+					"color" "Border.Selection"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "Border.Bright"
+					"offset" "0 1"
+				}
+			}
+			Top
+			{
+				"1"
+				{
+					"color" "Border.Selection"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "Border.Bright"
+					"offset" "1 0"
+				}
+			}
+			Right
+			{
+				"1"
+				{
+					"color" "Border.Selection"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "Border.Dark"
+					"offset" "1 0"
+				}
+			}
+			Bottom
+			{
+				"1"
+				{
+					"color" "Border.Selection"
+					"offset" "0 0"
+				}
+				"2"
+				{
+					"color" "Border.Dark"
+					"offset" "0 0"
+				}
+			}
+		}
+
+		ButtonDepressedBorder
+		{
+			"inset" "2 1 1 1"
+			Left
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "0 1"
+				}
+			}
+
+			Right
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "1 0"
+				}
+			}
+
+			Top
+			{
+				"1"
+				{
+					"color" "Border.Dark"
+					"offset" "0 0"
+				}
+			}
+
+			Bottom
+			{
+				"1"
+				{
+					"color" "Border.Bright"
+					"offset" "0 0"
+				}
+			}
+		}
+	}
+
+	//////////////////////// CUSTOM FONT FILES /////////////////////////////
+	//
+	// specifies all the custom (non-system) font files that need to be loaded to service the above described fonts
 	CustomFontFiles
 	{
-		"6" 
-		{
-			"font" "resource/TF2Build.ttf"
-			"name" "TF2 Build"
-			"turkish"
-			{
-				"range" "0x0000 0x015F"
-			}
-			"swedish"
-			{
-				"range" "0x0000 0x00F6"
-			}
-			"spanish"
-			{
-				"range" "0x0000 0x00FC"
-			}
-			"romanian"
-			{
-				"range" "0x0000 0x021B"
-			}
-			"polish"
-			{
-				"range" "0x0000 0x017C"
-			}
-			"norwegian"
-			{
-				"range" "0x0000 0x00F8"
-			}
-			"danish"
-			{
-				"range" "0x0000 0x00F8"
-			}
-			"hungarian"
-			{
-				"range" "0x0000 0x0171"
-			}
-			"german"
-			{
-				"range" "0x0000 0x00FC"
-			}
-			"french"
-			{
-				"range" "0x0000 0x0178"
-			}
-			"finnish"
-			{
-				"range" "0x0000 0x017E"
-			}
-			"czech"
-			{
-				"range" "0x0000 0x017E"
-			}
-			"bulgarian"
-			{
-				"range" "0x0000 0x0451"
-			}
-			"russian"
-			{
-				"range" "0x0000 0x0451"
-			}	
-		}
+		"1"		"resource/HALFLIFE2.ttf"
+	
 	}
-}

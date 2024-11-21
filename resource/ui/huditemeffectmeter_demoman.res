@@ -17,6 +17,22 @@
 		"MeterBG"		"Gray"
 	}
 	
+	"DestroyIcon"	
+	{
+		"ControlName"	"CIconPanel"
+		"fieldName"		"DestroyIcon"
+		"xpos"			"24"
+		"ypos"			"1"
+		"zpos"			"1"
+		"wide"			"40"
+		"tall"			"40"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"icon"			"ico_demolish"
+		"iconColor"		"255 255 255 255"
+	}
+	
 	"ItemEffectMeterBG"
 	{
 		"ControlName"	"CTFImagePanel"
@@ -57,6 +73,8 @@
 		"brighttext"			"0"
 		"font"					"HudFontSmall"
 	}
+
+	
 
 	"ItemEffectMeter"
 	{	
@@ -100,4 +118,26 @@
 		"font"					"HudFontMedium"
 		"fgcolor_override"		"White"
 	}
+	
+	"ItemEffectMeterCountShadow"
+	{
+		"ControlName"			"CExLabel"
+		"fieldName"				"ItemEffectMeterCountShadow"
+		"xpos"					"27"
+		"ypos"					"6"
+		"zpos"					"2"
+		"wide"					"40"
+		"tall"					"20"	
+		"pinCorner"				"2"
+		"visible"				"1"
+		"enabled"				"1"
+		"tabPosition"			"0"
+		"labelText"				"%progresscount%"
+		"textAlignment"			"north"
+		"dulltext"				"0"
+		"brighttext"			"0"
+		"font"					"HudFontMedium"
+		"fgcolor_override"		"Black"
+	}
+	
 }

@@ -13,6 +13,51 @@
 		"button_command"	"play_event"
 	}
 	
+	"FooterLine"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"FooterLine"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"1000"
+		"wide"			"f0"
+		"tall"			"10"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"loadout_solid_line"
+		"scaleImage"	"1"
+	}	
+	
+	"FooterLineBottom"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"FooterLineBottom"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"1000"
+		"wide"			"f0"
+		"tall"			"10"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"loadout_solid_line"
+		"scaleImage"	"1"
+	}	
+	
+	"FooterLineTop"
+	{
+		"ControlName"	"ImagePanel"
+		"fieldName"		"FooterLineTop"
+		"xpos"			"0"
+		"ypos"			"400"
+		"zpos"			"1000"
+		"wide"			"f0"
+		"tall"			"10"
+		"visible"		"1"
+		"enabled"		"1"
+		"image"			"loadout_solid_line"
+		"scaleImage"	"1"
+	}	
+	
 	"CasualDescription"
 		{
 			"ControlName"	"CExLabel"
@@ -21,7 +66,7 @@
 			"labelText"		"Select from a variety of official maps 
 			and modes in a 12v12 format."
 			"textAlignment"	"center"
-			"xpos"			"-300"
+			"xpos"			"-288"
 			"ypos"			"300"
 			"zpos"			"160"
 			"wide"			"f0"
@@ -59,7 +104,7 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"CasualImage"
-		"xpos"			"0"
+		"xpos"			"15"
 		"ypos"			"66"
 		"tall"			"280"
 		"wide"			"250"
@@ -80,7 +125,7 @@
 			"labelText"		"Browse the internet to find 
 			community-curated servers."
 			"textAlignment"	"center"
-			"xpos"			"293"
+			"xpos"			"297"
 			"ypos"			"300"
 			"zpos"			"160"
 			"wide"			"f0"
@@ -97,9 +142,9 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"MVMImage"
-		"xpos"			"296"
+		"xpos"			"302"
 		"ypos"			"65"
-		"tall"			"168"
+		"tall"			"158"
 		"wide"			"250"
 		"visible"		"1"
 		"enabled"		"1"
@@ -112,7 +157,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MVMButton"
-		"xpos"			"296"
+		"xpos"			"302"
 		"ypos"			"275"
 		"zpos"			"160"
 		"wide"			"265"
@@ -163,7 +208,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"CommunityButton"
-		"xpos"			"591"
+		"xpos"			"590"
 		"ypos"			"275"
 		"zpos"			"160"
 		"wide"			"265"
@@ -213,7 +258,7 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"CreateServerButton"
 		"xpos"			"695"
-		"ypos"			"400"
+		"ypos"			"402"
 		"zpos"			"160"
 		"wide"			"265"
 		"tall"			"30"
@@ -262,7 +307,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"CasualButton"
-		"xpos"			"0"
+		"xpos"			"15"
 		"ypos"			"275"
 		"zpos"			"160"
 		"wide"			"265"
@@ -311,7 +356,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MVMBackground"
-		"xpos"			"296"
+		"xpos"			"302"
 		"ypos"			"32"
 		"zpos"			"-5"
 		"tall"			"240"
@@ -358,7 +403,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"CasualBackground"
-		"xpos"			"0"
+		"xpos"			"15"
 		"ypos"			"32"
 		"zpos"			"-5"
 		"tall"			"240"

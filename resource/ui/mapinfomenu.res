@@ -85,22 +85,6 @@
 		"fgcolor"		"Gray"
 	}
 	
-	"MenuBoxBG"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"MenuBoxBG"
-		"xpos"			"0"
-		"ypos"			"428"
-		"zpos"			"2"
-		"wide"			"10000"
-		"tall"			"107"
-		"visible"		"1"
-		"pinCorner"		"0"
-		"autoResize"	"0"
-		"bgcolor_override"	"46 43 42 255"
-		"PaintBackgroundType"	"2"
-	}
-	
 	"MapImage"
 	{
 		"ControlName"	"ImagePanel"
@@ -139,37 +123,16 @@
 		"tall"			"30"
 		"autoResize"	"0"
 		"pinCorner"		"2"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"labelText"		"#TF_Continue"
 		"textAlignment"	"center"
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"command"		"continue"
 		"default"		"1"
-		"font"			"MenuSmallFont"
-		"fgcolor"		"Black"
-	}
-	
-	
-	"ContinueButton" [$WIN32] 
-	{
-		"ControlName"	"CExButton"
-		"fieldName"		"ContinueButton"
-		"xpos"			"r180"
-		"ypos"			"r38"
-		"zpos"			"6"
-		"wide"			"150"
-		"tall"			"25"
-		"autoResize"	"0"
-		"pinCorner"		"2"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"	"0"
-		"labelText"		"Continue"
-		"textAlignment"	"center"
-		"Command"		"continue"
 		"font"			"HudFontSmallBold"
+		"fgcolor"		"Black"
 		
 		"border_default"	"MainMenuButtonDefault"
 		"border_armed"		"MainMenuButtonArmed"
@@ -177,8 +140,8 @@
 		"defaultFgColor_override" "46 43 42 255"
 		"armedFgColor_override" "235 226 202 255"
 		"depressedFgColor_override" "46 43 42 255"
+		
 	}
-	
 	
 	"MapInfoWatchIntro" [$WIN32]
 	{
@@ -201,8 +164,16 @@
 		"brighttext"	"0"
 		"command"		"intro"
 		"default"		"1"
-		"font"			"MenuSmallFont"
+		"font"			"HudFontSmallBold"
 		"fgcolor"		"Black"
+		
+		"border_default"	"MainMenuButtonDefault"
+		"border_armed"		"MainMenuButtonArmed"
+		"paintbackground"	"0"
+		"defaultFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "235 226 202 255"
+		"depressedFgColor_override" "46 43 42 255"
+		
 	}
 	
 	"MapInfoBack" [$WIN32]
@@ -226,28 +197,17 @@
 		"dulltext"		"0"
 		"brighttext"	"0"
 		"command"		"back"
-		"font"			"MenuSmallFont"
+		"font"			"HudFontSmallBold"
 		"fgcolor"		"Black"
+		
+		"border_default"	"MainMenuButtonDefault"
+		"border_armed"		"MainMenuButtonArmed"
+		"paintbackground"	"0"
+		"defaultFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "235 226 202 255"
+		"depressedFgColor_override" "46 43 42 255"
+		
 	}
-	
-	"MenuBoxBG"
-	{
-		"ControlName"	"EditablePanel"
-		"fieldName"		"MenuBoxBG"
-		"xpos"			"0"
-		"ypos"			"428"
-		"zpos"			"2"
-		"wide"			"10000"
-		"tall"			"107"
-		"visible"		"1"
-		"pinCorner"		"0"
-		"autoResize"	"0"
-		"bgcolor_override"	"46 43 42 255"
-		"PaintBackgroundType"	"2"
-	}
-	
-	
-	
 	
 	"MenuBG"
 	{
@@ -260,8 +220,8 @@
 		"tall"			"480"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"fov"			"20"
 		
 		"model"
@@ -294,8 +254,8 @@
 		"tall_hidef"			"65"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"0"
-		"enabled"		"0"
+		"visible"		"1"
+		"enabled"		"1"
 		"tabPosition"	"0"	
 		"image"			"loadout_bottom_gradient"
 		"tileImage"		"1"

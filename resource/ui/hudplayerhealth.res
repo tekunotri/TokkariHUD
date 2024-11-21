@@ -158,9 +158,9 @@
 	{
 		"ControlName"	"CExLabel"
 		"fieldName"		"PlayerStatusMaxHealthValue"
-		"xpos"			"151"
+		"xpos"			"114"
 		"xpos_minmode"	"61"
-		"ypos"			"83"	[$WIN32]
+		"ypos"			"54"	[$WIN32]
 		"ypos"			"55"	[$X360]
 		"zpos"			"6"
 		"wide"			"50"
@@ -169,9 +169,29 @@
 		"enabled"		"1"
 		"labelText"		"%MaxHealth%"
 		"textAlignment"	"center"	
-		"font"			"HudFontSmall"
+		"font"			"HudFontSmallBold"
 		"fgcolor"		"TanLight"
 	}
+	
+	"PlayerStatusMaxHealthValueShadow"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"PlayerStatusMaxHealthValueShadow"
+		"xpos"			"112"
+		"xpos_minmode"	"61"
+		"ypos"			"55"	[$WIN32]
+		"ypos"			"55"	[$X360]
+		"zpos"			"6"
+		"wide"			"50"
+		"tall"			"18"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%MaxHealth%"
+		"textAlignment"	"center"	
+		"font"			"HudFontSmallBold"
+		"fgcolor"		"Black"
+	}
+	
 	"PlayerStatusBleedImage"
 	{
 		"ControlName"	"ImagePanel"

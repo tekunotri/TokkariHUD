@@ -21,6 +21,16 @@
 		"tooltip" "#MMenu_CallVote"
 	}
 	
+	"CallVote2"
+	{
+		"label"			""
+		"command"		"callvote"
+		"OnlyInGame"	"1"
+		"subimage" "icon_checkbox"
+		"tooltip" "#MMenu_CallVote"
+	}
+	
+	
 	"DisconnectButton2"
 	{
 		"label" 		"‎Disconnect"

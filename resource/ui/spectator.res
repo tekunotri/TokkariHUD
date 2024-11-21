@@ -214,8 +214,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetFwdKeyLabel"
-		"xpos"			"5"	[$WIN32]
-		"ypos"			"20"	[$WIN32]
+		"xpos"			"-19"	[$WIN32]
+		"ypos"			"14"	[$WIN32]
 		"xpos"			"53"	[$X360]
 		"ypos"			"50"	[$X360]		
 		"wide"			"60"	[$WIN32]
@@ -235,8 +235,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetFwdLabel"
-		"xpos"			"80"	[$WIN32]
-		"ypos"			"20"	[$WIN32]
+		"xpos"			"44"	[$WIN32]
+		"ypos"			"14"[$WIN32]
 		"xpos"			"128"	[$X360]
 		"ypos"			"50"	[$X360]		
 		"wide"			"125"	[$WIN32]
@@ -256,8 +256,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetRevKeyLabel"
-		"xpos"			"5"	[$WIN32]
-		"ypos"			"30"	[$WIN32]
+		"xpos"			"-19"	[$WIN32]
+		"ypos"			"24"		[$WIN32]
 		"xpos"			"53"	[$X360]
 		"ypos"			"60"	[$X360]		
 		"wide"			"60"	[$WIN32]
@@ -277,8 +277,8 @@
 	{
 		"ControlName"		"CExLabel"
 		"fieldName"		"CycleTargetRevLabel"
-		"xpos"			"80"	[$WIN32]
-		"ypos"			"30"	[$WIN32]
+		"xpos"			"44"	[$WIN32]
+		"ypos"			"24"	[$WIN32]
 		"xpos"			"128"	[$X360]
 		"ypos"			"60"	[$X360]		
 		"wide"			"125"	[$WIN32]

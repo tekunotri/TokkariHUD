@@ -23,7 +23,7 @@ Scheme
 		"OrangeDim"			"178 82 22 120"
 		"LightOrange"		"188 112 0 128"
 		"GoalOrange"		"255 133 0"
-		"TFOrange"			"145 73 59 255"
+		"TFOrange"			"178 82 22 255"
 		"Purple"			"137 69 99 255"
 		"Brown"				"82, 44, 7 255"
 
@@ -219,8 +219,8 @@ Scheme
 		// vgui_controls color specifications
 		ReplayBrowser.BgColor								"DarkBrown"
 		ReplayBrowser.Details.TitleEdit.Carat.FgColor		"LightRed"
-		ReplayBrowser.Button.ArmedBgColor					"TFOrange"
-		ReplayBrowser.Button.DepressedBgColor				"TFOrange"
+		ReplayBrowser.Button.ArmedBgColor					"Orange"
+		ReplayBrowser.Button.DepressedBgColor				"Orange"
 		ReplayBrowser.CollectionTitle.FgColor				"LightRed"
 		ReplayBrowser.Warning.FgColor						"White"
 		ReplayBrowser.ScrollBar.SliderButton.FgColor		"TransparentYellow"
@@ -254,9 +254,9 @@ Scheme
 		Button.ArmedTextColor			"TanLight"
 		Button.ArmedBgColor				"Orange"
 		Button.SelectedTextColor		"TanLight"
-		Button.SelectedBgColor			"TFOrange"
+		Button.SelectedBgColor			"Orange"
 		Button.DepressedTextColor		"TanLight"
-		Button.DepressedBgColor			"TFOrange"
+		Button.DepressedBgColor			"Orange"
 
 		CheckButton.TextColor			"Yellow"
 		CheckButton.SelectedTextColor	"Yellow"
@@ -3710,7 +3710,7 @@ Scheme
 			"bordertype"			"scalable_image"
 			"backgroundtype"		"2"
 			
-			"image"					"button_holder_central"
+			"image"					"replay/thumbnails/itempanelborder"
 			"src_corner_height"		"32"				// pixels inside the image
 			"src_corner_width"		"32"
 			"draw_corner_width"		"4"				// screen size of the corners ( and sides ), proportional
