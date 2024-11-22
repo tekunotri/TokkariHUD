@@ -52,11 +52,11 @@
 		{
 			"ControlName"	"CBaseModelPanel"
 			"fieldName"		"RankModel"
-			"xpos"			"cs-0.5"
-			"ypos"			"cs-0.5"
+			"xpos"			"534"
+			"ypos"			"480"
 			"zpos"			"5"		
-			"wide"			"o1"
-			"tall"			"p0.12"
+			"wide"			"43"
+			"tall"			"43"
 			"autoResize"	"0"
 			"pinCorner"		"0"
 			"visible"		"1"
@@ -212,11 +212,35 @@
 			"wide"			"505"
 		}
 
+
+		"Welcome"
+		{
+			"ControlName"	"Label"
+			"fieldName"		"Welcome"
+			"xpos"			"67"
+			"ypos"			"5"
+			"wide"			"f0"
+			"zpos"			"5"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"HudFontSmallishBold"
+			"fgcolor_override"	"TanLight"
+			"textAlignment"	"north-west"
+			"labelText"		"Welcome,"
+			"proportionaltoparent"	"1"
+
+			if_mini
+			{
+				"visible"	"0"
+			}
+		}
+
 		"NameLabel"
 		{
 			"ControlName"	"Label"
 			"fieldName"		"NameLabel"
-			"xpos"			"65"
+			"xpos"			"146"
 			"ypos"			"5"
 			"wide"			"f0"
 			"zpos"			"5"
@@ -239,7 +263,7 @@
 		{
 			"ControlName"	"CAutoFittingLabel"
 			"fieldName"		"DescLine1"
-			"xpos"			"65"
+			"xpos"			"98"
 			"ypos"			"19"
 			"wide"			"195"
 			"zpos"			"5"
@@ -270,7 +294,7 @@
 		{
 			"ControlName"	"CAutoFittingLabel"
 			"fieldName"		"DescLine2"
-			"xpos"			"65"
+			"xpos"			"98"
 			"ypos"			"29"
 			"wide"			"195"
 			"zpos"			"5"
@@ -345,7 +369,7 @@
 					"tall"			"20"
 					"visible"		"1"
 					"enabled"		"1"
-					"font"			"ItemFontAttribSmall"
+					"font"			"HudFontSmallest"
 					"fgcolor_override"	"TanLight"
 					"textAlignment"	"south-west"
 					"labelText"		"%current_xp%"
@@ -363,7 +387,7 @@
 					"tall"			"20"
 					"visible"		"1"
 					"enabled"		"1"
-					"font"			"ItemFontAttribSmall"
+					"font"			"HudFontSmallest"
 					"fgcolor_override"	"TanLight"
 					"textAlignment"	"south-east"
 					"labelText"		"%next_level_xp%"

@@ -898,16 +898,25 @@ Scheme
 			}
 		}
 		"HudFontMediumSecondary"
-		{
-			"1"
-			{
-				"name"		"TF2 Secondary"
-				"tall"		"24"
-				"weight"	"500"
-				"additive"	"0"
-				"antialias" "1"
-			}
-		}
+        {
+            "1"
+            {
+                "name"        "TF2 Secondary"
+                "tall"        "24"
+                "weight"    "500"
+                "yres"        "1 1199"
+                "additive"    "0"
+                "antialias" "1"
+            }
+            "2" // Misyl: Proportional
+            {
+                "name"        "TF2 Secondary"
+                "tall"        "10"
+                "weight"    "500"
+                "additive"    "0"
+                "antialias" "1"
+            }
+        }
 		"HudFontMediumBold"
 		{
 			"1"

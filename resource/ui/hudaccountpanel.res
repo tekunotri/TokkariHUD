@@ -2,13 +2,13 @@
 {
 	"CHudAccountPanel"
 	{
-		"delta_item_x"			"28"
+		"delta_item_x"			"23"
 		"delta_item_start_y"	"90"
 		"delta_item_end_y"		"70"
 		"PositiveColor"			"0 255 0 255"
 		"NegativeColor"			"255 0 0 255"
 		"delta_lifetime"		"1.5"
-		"delta_item_font"		"HudFontMedium"
+		"delta_item_font"		"HudFontMediumBold"
 	}
 	
 	"AccountBG"
@@ -50,6 +50,26 @@
 		"iconColor"		"TanLight"
 	}
 	
+	"MetalIconShadow"	
+	{
+		"ControlName"	"CIconPanel"
+		"fieldName"		"MetalIconShadow"
+		"xpos"			"21"
+		"xpos_lodef"	"12"
+		"ypos"			"120"
+		"ypos_lodef"	"112"
+		"zpos"			"1"
+		"wide"			"10"
+		"wide_lodef"	"15"
+		"tall"			"10"
+		"tall_lodef"	"15"
+		"visible"		"1"
+		"enabled"		"1"
+		"scaleImage"	"1"	
+		"icon"			"ico_metal"
+		"iconColor"		"Black"
+	}
+	
 	"AccountValue"
 	{
 		"ControlName"	"CExLabel"
@@ -73,4 +93,30 @@
 		"font_lodef"	"HudFontMedium"
 		"fgcolor_override"	"TanLight"
 	}
+	
+	"AccountValueShadow"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"AccountValueShadow"
+		"xpos"			"22"
+		"ypos"			"114"
+		"ypos_lodef"	"121"
+		"zpos"			"2"
+		"wide"			"55"
+		"tall"			"26"
+		"autoResize"	"1"
+		"pinCorner"		"2"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"%metal%"
+		"textAlignment"	"center"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"font"			"HudFontMediumSmall"
+		"font_lodef"	"HudFontMedium"
+		"fgcolor_override"	"Black"
+	}
+	
+	
 }

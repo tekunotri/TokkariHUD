@@ -1002,10 +1002,11 @@
 		"fieldName" 	"HudMenuEngyBuild"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"c-225"
-		"ypos"			"c-55"
-		"wide"			"450"
-		"tall"			"195"
+		"xpos"			"c175"
+		"ypos"			"c-100"
+		"zpos"			"10"
+		"wide"			"250"
+		"tall"			"320"
 		"PaintBackgroundType"	"0"
 	}
 	
@@ -1014,10 +1015,11 @@
 		"fieldName" 	"HudMenuEngyDestroy"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"c-225"
-		"ypos"			"c-59"
-		"wide"			"450"
-		"tall"			"200"
+		"xpos"			"c175"
+		"ypos"			"c-100"
+		"zpos"			"10"
+		"wide"			"250"
+		"tall"			"320"
 		"PaintBackgroundType"	"0"
 	}
 
@@ -1038,12 +1040,11 @@
 		"fieldName" 	"HudMenuSpyDisguise"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"c-235"
-		"ypos"			"c-52"
-		"ypos_hidef"	"c-42"
-		"ypos_lodef"	"c-42"
-		"wide"			"470"
-		"tall"			"200"	[$WIN32]
+		"xpos"			"c175"
+		"ypos"			"c-100"
+		"zpos"			"10"
+		"wide"			"250"
+		"tall"			"320"	[$WIN32]
 		"tall"			"180"	[$X360]
 		"PaintBackgroundType"	"0"
 	}	
@@ -1418,12 +1419,11 @@
 		"fieldName" 	"HudMenuTauntSelection"
 		"visible" 		"1"
 		"enabled" 		"1"
-		"xpos"			"c-235"
-		"ypos"			"c-52"
-		"ypos_hidef"	"c-42"
-		"ypos_lodef"	"c-42"
-		"wide"			"470"
-		"tall"			"200"
+		"xpos"			"c175"
+		"ypos"			"c-100"
+		"zpos"			"10"
+		"wide"			"250"
+		"tall"			"320"
 		"PaintBackgroundType"	"0"
 	}
 

@@ -243,16 +243,31 @@
 	
 	
 	
+	"PFPBackground"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"PFPBackground"
+		"xpos"			"262"
+		"ypos"			"425"
+		"zpos"			"99"
+		"wide"			"57"
+		"tall"			"54"
+		"visible"		"1"
+		"pinCorner"		"0"
+		"autoResize"	"0"
+		"bgcolor_override"	"TanDark"
+		"PaintBackgroundType"	"2"
+	}
 	
 	"PartySlot0"
 		{
 			"ControlName"	"CDashboardPartyMember"
 			"fieldName"		"PartySlot0"
-			"xpos"			"0"
-			"ypos"			"rs1-60"
+			"xpos"			"266"
+			"ypos"			"427"
 			"zpos"			"100"
 			"wide"			"o1"
-			"tall"			"24"
+			"tall"			"50"
 			"autoResize"	"0"
 			"pinCorner"		"3"
 			"visible"		"1"
@@ -269,7 +284,7 @@
 		{
 			"ControlName"	"CDashboardPartyMember"
 			"fieldName"		"PartySlot1"
-			"xpos"			"24"
+			"xpos"			"0"
 			"ypos"			"rs1-60"
 			"zpos"			"100"
 			"wide"			"o1"
@@ -290,7 +305,7 @@
 		{
 			"ControlName"	"CDashboardPartyMember"
 			"fieldName"		"PartySlot2"
-			"xpos"			"48"
+			"xpos"			"24"
 			"ypos"			"rs1-60"
 			"zpos"			"100"
 			"wide"			"o1"
@@ -311,7 +326,7 @@
 		{
 			"ControlName"	"CDashboardPartyMember"
 			"fieldName"		"PartySlot3"
-			"xpos"			"72"
+			"xpos"			"48"
 			"ypos"			"rs1-60"
 			"zpos"			"100"
 			"wide"			"o1"
@@ -332,7 +347,7 @@
 		{
 			"ControlName"	"CDashboardPartyMember"
 			"fieldName"		"PartySlot4"
-			"xpos"			"96"
+			"xpos"			"72"
 			"ypos"			"rs1-60"
 			"zpos"			"100"
 			"wide"			"o1"
@@ -353,7 +368,7 @@
 		{
 			"ControlName"	"CDashboardPartyMember"
 			"fieldName"		"PartySlot5"
-			"xpos"			"120"
+			"xpos"			"96"
 			"ypos"			"rs1-60"
 			"zpos"			"100"
 			"wide"			"o1"
@@ -566,7 +581,7 @@
 	}
 	
 	
-
+	
 	
 	
 	
@@ -629,10 +644,10 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_ShowButtonPanel"
-		"xpos"			"c-140"
+		"xpos"			"c-281"
 		"ypos"			"39"
 		"zpos"			"10"
-		"wide"			"32"
+		"wide"			"93"
 		"tall"			"32"
 		"autoResize"	"0"
 		"pinCorner"		"3"
@@ -649,8 +664,8 @@
 		{
 			"ControlName"	"ImagePanel"
 			"fieldName"		"SubImage"
-			"xpos"			"16"
-			"ypos"			"0"
+			"xpos"			"8"
+			"ypos"			"9"
 			"zpos"			"3"
 			"wide"			"16"
 			"tall"			"16"
@@ -668,8 +683,8 @@
 			"font"			"HudFontSmallestBold"
 			"labelText"		"%noticount%"
 			"textAlignment"	"center"
-			"xpos"			"16"
-			"ypos"			"0"
+			"xpos"			"8"
+			"ypos"			"9"
 			"zpos"			"4"
 			"wide"			"16"
 			"tall"			"16"
@@ -682,19 +697,19 @@
 	
 		"Notifications_ShowButtonPanel_SB"
 		{
-			"ControlName"	"CExImageButton"
+			"ControlName"	"CExButton"
 			"fieldName"		"Notifications_ShowButtonPanel_SB"
 			"xpos"			"0"
-			"ypos"			"0"
+			"ypos"			"4"
 			"zpos"			"1"
-			"wide"			"32"
-			"tall"			"32"
+			"wide"			"90"
+			"tall"			"27"
 			"autoResize"	"0"
 			"pinCorner"		"3"
 			"visible"		"1"
 			"enabled"		"1"
 			"tabPosition"	"0"
-			"labelText"		""
+			"labelText"		"Alerts"
 			"font"			"HudFontSmallestBold"
 			"textAlignment"	"center"
 			"dulltext"		"0"
@@ -707,9 +722,12 @@
 
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			"paintbackground" "0"
-			"image_drawcolor"	"235 226 202 255"
-			"image_armedcolor"	"255 255 255 255"
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
 			
 			"SubImage"
 			{
@@ -719,13 +737,45 @@
 				"ypos"			"0"
 				"zpos"			"1"
 				"wide"			"32"
-				"tall"			"32"
-				"visible"		"1"
-				"enabled"		"1"
+				"tall"			"33"
+				"visible"		"0"
+				"enabled"		"0"
 				"image"			"button_Alert"
 				"scaleImage"	"1"
 			}
 		}
+	}
+
+	"NewsButton"
+	{
+		"ControlName"	"CExButton"
+		"fieldName"		"NewsButton"
+		"xpos"			"240"
+		"ypos"			"43"
+		"zpos"			"20"
+		"wide"			"80"
+		"tall"			"27"
+		"default"		"1"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		"labelText"		"News"
+		"font"			"HudFontSmallestBold"
+		"textAlignment"	"center"
+		"textinsetx"	"50"
+		"dulltext"		"0"
+		"brighttext"	"0"
+		"Command"		"motd_show"
+		"sound_depressed"	"UI/buttonclick.wav"
+		"sound_released"	"UI/buttonclickrelease.wav"
+		"border_default"	"MainMenuButtonDefault"
+		"border_armed"		"MainMenuButtonArmed"
+		"paintbackground"	"0"
+		"defaultFgColor_override" "46 43 42 255"
+		"armedFgColor_override" "235 226 202 255"
+		"depressedFgColor_override" "46 43 42 255"
 	}
 
 	"WatchStreamButton"
@@ -885,8 +935,8 @@
 		"tall"			"32"
 		"autoResize"	"0"
 		"pinCorner"		"3"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 
 		"navUp"			"MOTD_Panel"				// pass through when naving up to this or the fully displayed MOTD
 		"navDown"		"Notifications_Panel"		// when a sub element can't nav down it will pass through this
@@ -934,23 +984,73 @@
 				"zpos"			"1"
 				"wide"			"32"
 				"tall"			"32"
-				"visible"		"1"
-				"enabled"		"1"
+				"visible"		"0"
+				"enabled"		"0"
 				"image"			"button_MOTD"
 				"scaleImage"	"1"
 			}
 		}
 	}
 	
+	"MOTDB"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"MOTDB"
+		"xpos"			"c-280"
+		"ypos"			"44"
+		"zpos"			"160"
+		"wide"			"90"
+		"tall"			"30"
+		"visible"		"0"
+		"enabled"		"0"
+		"PaintBackgroundType"	"0"
+		
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"90"
+			"tall"			"27"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"labelText"		"News"
+			"tabPosition"	"0"
+			"textinsetx"	"25"
+			"command"       "motd_show"
+			"use_proportional_insets" "1"
+			"actionsignallevel"	"2"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"center"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_armed"		"UI/buttonrollover.wav"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+		}
+	}	
+	
+	
 	"MOTD_Panel"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MOTD_Panel"
-		"xpos"			"c5"
-		"ypos"			"65"
+		"xpos"			"320"
+		"ypos"			"44"
 		"zpos"			"1"
 		"wide"			"300"
-		"tall"			"350"
+		"tall"			"335"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
 		"paintbackground"	"0"
@@ -968,7 +1068,7 @@
 			"ypos"			"0"
 			"wide"			"300"
 			"tall"			"22"
-			"visible"		"0"
+			"visible"		"1"
 			
 			"MOTD_HeaderLabel"
 			{
@@ -1055,8 +1155,8 @@
 			"zpos"			"100"
 			"wide"			"25"
 			"tall"			"25"
-			"visible"		"0"
-			"enabled"		"0"
+			"visible"		"1"
+			"enabled"		"1"
 			"image"			"class_icons/filter_all_motd"
 			"scaleImage"	"1"
 		}
@@ -1074,8 +1174,8 @@
 			"tall"			"15"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"0"
-			"enabled"		"0"
+			"visible"		"1"
+			"enabled"		"1"
 			"fgcolor"		"LabelDark"
 			"wrap"			"1"
 		}
@@ -1093,8 +1193,8 @@
 			"tall"			"15"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"0"
-			"enabled"		"0"
+			"visible"		"1"
+			"enabled"		"1"
 			"fgcolor"		"LabelDark"
 		}
 		
@@ -1107,8 +1207,8 @@
 			"zpos"			"99"
 			"wide"			"250"
 			"tall"			"150"
-			"visible"		"0"
-			"enabled"		"0"
+			"visible"		"1"
+			"enabled"		"1"
 			"image"			"item_bg"
 			"scaleImage"	"1"
 			"proportionaltoparent" "1"
@@ -1123,7 +1223,7 @@
 			"zpos"			"100"
 			"wide"			"250"
 			"tall"			"150"
-			"visible"		"0"
+			"visible"		"1"
 			"proportionaltoparent" "1"
 			
 			"MOTD_TitleImage"
@@ -1135,8 +1235,8 @@
 				"zpos"			"100"
 				"wide"			"250"
 				"tall"			"250"
-				"visible"		"0"
-				"enabled"		"0"
+				"visible"		"1"
+				"enabled"		"1"
 				"image"			"class_icons/filter_all"
 				"scaleImage"	"0"
 			}
@@ -1450,8 +1550,8 @@
 			"tall"			"30"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
+			"visible"		"0"
+			"enabled"		"0"
 			"textinsetx"	"0"
 			"fgcolor_override"	"235 227 203 255"
 		}
@@ -1471,8 +1571,8 @@
 			"tall"			"30"
 			"autoResize"	"0"
 			"pinCorner"		"0"
-			"visible"		"1"
-			"enabled"		"1"
+			"visible"		"0"
+			"enabled"		"0"
 			"textinsetx"	"0"
 			"fgcolor_override"	"235 227 203 255"
 		}
@@ -1593,7 +1693,7 @@
 			"ControlName"	"CExLabel"
 			"fieldName"		"TitleLabel"
 			"font"			"HudFontSmallBold"
-			"labelText"		"TokkariHUD V1.7"
+			"labelText"		"TokkariHUD V1.8"
 			"textAlignment"	"west"
 			"xpos"			"130"
 			"ypos"			"65"
@@ -2513,7 +2613,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"MutePlayersButton"
-		"xpos"			"c-107"
+		"xpos"			"c-103"
 		"ypos"			"177"
 		"zpos"			"12"
 		"wide"			"25"
@@ -2548,8 +2648,8 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuSubButtonBorder"
-			"paintbackground"	"1"
+			"roundedcorners"	"15"
+			"paintbackground"	"2"
 			
 			"defaultFgColor_override" "46 43 42 255"
 			"armedFgColor_override" "46 43 42 255"
@@ -2581,7 +2681,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"CallVote2"
-		"xpos"			"c-107"
+		"xpos"			"c-103"
 		"ypos"			"150"
 		"zpos"			"12"
 		"wide"			"25"
@@ -2616,8 +2716,9 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
-			"border_default"	"MainMenuSubButtonBorder"
-			"paintbackground"	"1"
+			
+			"paintbackground"	"2"
+			"roundedcorners"	"15"
 			
 			"defaultFgColor_override" "46 43 42 255"
 			"armedFgColor_override" "46 43 42 255"
@@ -2773,6 +2874,7 @@
 		
 				
 		"image_drawcolor"	"235 226 202 255"
+		"image_armedcolor"	"235 226 202 255"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -2932,6 +3034,7 @@
 		"paintbackground"	"1"
 				
 		"image_drawcolor"	"235 226 202 255"
+		"image_armedcolor"	"235 226 202 255"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -2980,6 +3083,7 @@
 		"paintbackground"	"1"
 				
 		"image_drawcolor"	"235 226 202 255"
+		"image_armedcolor"	"235 226 202 255"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -3028,6 +3132,7 @@
 		"paintbackground"	"1"
 				
 		"image_drawcolor"	"235 226 202 255"
+		"image_armedcolor"	"235 226 202 255"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -3077,6 +3182,7 @@
 		"paintbackground"	"1"
 				
 		"image_drawcolor"	"235 226 202 255"
+		"image_armedcolor"	"235 226 202 255"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -3126,6 +3232,7 @@
 		"sound_released"	"UI/buttonclickrelease.wav"
 		
 		"image_drawcolor"	"235 226 202 255"
+		"image_armedcolor"	"235 226 202 255"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -3175,6 +3282,7 @@
 		"sound_released"	"UI/buttonclickrelease.wav"
 		
 		"image_drawcolor"	"235 226 202 255"
+		"image_armedcolor"	"235 226 202 255"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -3233,10 +3341,10 @@
 			"zpos"			"1"
 			"wide"			"14"
 			"tall"			"14"
-			"visible"		"0"
-			"enabled"		"0"
+			"visible"		"1"
+			"enabled"		"1"
 			"scaleImage"	"1"
-			"image"			"glyph_"
+			"image"			"replay/thumbnails/glyph_console"
 		}			
 	}
 
@@ -3281,10 +3389,10 @@
 			"zpos"			"1"
 			"wide"			"14"
 			"tall"			"14"
-			"visible"		"0"
-			"enabled"		"0"
+			"visible"		"1"
+			"enabled"		"1"
 			"scaleImage"	"1"
-			"image"			"glyph_"
+			"image"			"replay/thumbnails/glyph_contracker"
 		}			
 	}
 
@@ -3323,6 +3431,7 @@
 		"sound_released"	"UI/buttonclickrelease.wav"
 		
 		"image_drawcolor"	"235 226 202 255"
+		"image_armedcolor"	"235 226 202 255"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
@@ -4534,6 +4643,7 @@
 		"sound_released"	"UI/buttonclickrelease.wav"
 		
 		"image_drawcolor"	"235 226 202 255"
+		"image_armedcolor"	"235 226 202 255"
 		"SubImage"
 		{
 			"ControlName"	"ImagePanel"
