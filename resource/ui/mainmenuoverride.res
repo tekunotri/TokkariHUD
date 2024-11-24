@@ -229,7 +229,7 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"TokkariLogo"
-		"xpos"			"c-438"
+		"xpos"			"0"
 		"ypos"			"0"
 		"zpos"			"-2"
 		"wide"			"500"
@@ -247,7 +247,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"PFPBackground"
-		"xpos"			"262"
+		"xpos"			"252"
 		"ypos"			"425"
 		"zpos"			"99"
 		"wide"			"57"
@@ -259,11 +259,11 @@
 		"PaintBackgroundType"	"2"
 	}
 	
-	"PartySlot0"
+	"PartySlot0" // profile pic next to pvprankpanel
 		{
 			"ControlName"	"CDashboardPartyMember"
 			"fieldName"		"PartySlot0"
-			"xpos"			"266"
+			"xpos"			"256"
 			"ypos"			"427"
 			"zpos"			"100"
 			"wide"			"o1"
@@ -405,7 +405,7 @@
 	{
 		"ControlName"	"CPvPRankPanel"
 		"fieldName"		"RankModelPanel"
-		"xpos"			"cs-0.5-142"
+		"xpos"			"cs-0.5-50"
 		"ypos"			"cs-0.5--208"
 
 		"zpos"			"-2"
@@ -496,7 +496,7 @@
 	{
 		"ControlName"	"CPvPRankPanel"
 		"fieldName"		"RankPanel"
-		"xpos"			"c-224"
+		"xpos"			"c-131"
 		"ypos"			"400"
 		"zpos"			"1"
 		"wide"			"320"
@@ -1736,7 +1736,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"FriendsContainer"
-		"xpos"			"c-430"
+		"xpos"			"c-320"
 		"ypos"			"340"
 		"zpos"			"5"
 		"wide"			"250"
@@ -2539,7 +2539,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"DisconnectButton2"
-		"xpos"			"c-356"
+		"xpos"			"c-252"
 		"ypos"			"347"
 		"zpos"			"9"
 		"wide"			"236"
@@ -2847,7 +2847,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"CharacterSetupButton"
-		"xpos"			"c-356"
+		"xpos"			"c-252"
 		"ypos"			"117"
 		"zpos"			"2"
 		"wide"			"235"
@@ -2896,7 +2896,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"FakeFindAGameButton2"
-		"xpos"			"c-356"
+		"xpos"			"c-252"
 		"ypos"			"90"
 		"zpos"			"-4"
 		"wide"			"235"
@@ -3006,7 +3006,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"GeneralStoreButton"
-		"xpos"			"c-356"
+		"xpos"			"c-252"
 		"ypos"			"144"
 		"zpos"			"2"
 		"wide"			"235"
@@ -3055,7 +3055,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"AchievementsButtonM"
-		"xpos"			"c-356"
+		"xpos"			"c-252"
 		"ypos"			"171"
 		"zpos"			"2"
 		"wide"			"235"
@@ -3104,7 +3104,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"DevComButton"
-		"xpos"			"c-356"
+		"xpos"			"c-252"
 		"ypos"			"198"
 		"zpos"			"2"
 		"wide"			"235"
@@ -3154,7 +3154,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"ReplayButtonM"
-		"xpos"			"c-356"
+		"xpos"			"c-252"
 		"ypos"			"225"
 		"zpos"			"2"
 		"wide"			"235"
@@ -3204,7 +3204,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"SettingsButton"
-		"xpos"			"c-356"
+		"xpos"			"c-252"
 		"ypos"			"287"
 		"zpos"			"4"
 		"wide"			"235"
@@ -3254,7 +3254,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"SettingsButton"
-		"xpos"			"c-356"
+		"xpos"			"c-252"
 		"ypos"			"313"
 		"zpos"			"4"
 		"wide"			"235"
@@ -3304,7 +3304,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"ConsoleButton"
-		"xpos"			"c-356"
+		"xpos"			"c-252"
 		"ypos"			"257"
 		"zpos"			"4"
 		"wide"			"105"
@@ -3351,8 +3351,8 @@
 	"OpenContracker"
 	{
 		"ControlName"	"CExImageButton"
-		"fieldName"		"ConsoleButton"
-		"xpos"			"c-227"
+		"fieldName"		"OpenContracker"
+		"xpos"			"c-122"
 		"ypos"			"257"
 		"zpos"			"4"
 		"wide"			"105"
@@ -3403,7 +3403,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"QuitButton2"
-		"xpos"			"c-356"
+		"xpos"			"c-252"
 		"ypos"			"347"
 		"zpos"			"9"
 		"wide"			"235"
@@ -4396,8 +4396,8 @@
     {
         "ControlName" "Label"
         "fieldName"   "bh_BottomPin"
-        "xpos"        "541"
-        "ypos"        "436"
+        "xpos"        "511"
+        "ypos"        "423"
         "zpos"        "0"
         "wide"        "100"
         "tall"        "0"
@@ -4410,8 +4410,8 @@
     {
         "ControlName" "Label"
         "fieldName"   "bh_BottomPin2"
-        "xpos"        "571"
-        "ypos"        "436"
+        "xpos"        "541"
+        "ypos"        "423"
         "zpos"        "0"
         "wide"        "100"
         "tall"        "0"
@@ -4424,8 +4424,8 @@
     {
         "ControlName" "Label"
         "fieldName"   "bh_BottomPin3"
-        "xpos"        "601"
-        "ypos"        "436"
+        "xpos"        "571"
+        "ypos"        "423"
         "zpos"        "0"
         "wide"        "100"
         "tall"        "0"
@@ -4438,8 +4438,8 @@
     {
         "ControlName" "Label"
         "fieldName"   "bh_BottomPin4"
-        "xpos"        "631"
-        "ypos"        "436"
+        "xpos"        "601"
+        "ypos"        "423"
         "zpos"        "0"
         "wide"        "100"
         "tall"        "0"
@@ -4452,8 +4452,8 @@
     {
         "ControlName" "Label"
         "fieldName"   "bh_BottomPin5"
-        "xpos"        "661"
-        "ypos"        "436"
+        "xpos"        "511"
+        "ypos"        "450"
         "zpos"        "0"
         "wide"        "100"
         "tall"        "0"
@@ -4466,8 +4466,8 @@
     {
         "ControlName" "Label"
         "fieldName"   "bh_BottomPin6"
-        "xpos"        "691"
-        "ypos"        "436"
+        "xpos"        "541"
+        "ypos"        "450"
         "zpos"        "0"
         "wide"        "100"
         "tall"        "0"
@@ -4480,8 +4480,8 @@
     {
         "ControlName" "Label"
         "fieldName"   "bh_BottomPin7"
-        "xpos"        "721"
-        "ypos"        "436"
+        "xpos"        "571"
+        "ypos"        "450"
         "zpos"        "0"
         "wide"        "100"
         "tall"        "0"
@@ -4494,8 +4494,8 @@
     {
         "ControlName" "Label"
         "fieldName"   "bh_BottomPin8"
-        "xpos"        "751"
-        "ypos"        "436"
+        "xpos"        "601"
+        "ypos"        "450"
         "zpos"        "0"
         "wide"        "100"
         "tall"        "0"
@@ -4504,12 +4504,12 @@
         "bgcolor_override"  "0 0 0 0"
     }
 
-	"bh_BottomPin9"
+	"bh_BottomPin9" //left out whoopsie!!!
     {
         "ControlName" "Label"
         "fieldName"   "bh_BottomPin9"
         "xpos"        "780"
-        "ypos"        "436"
+        "ypos"        "423"
         "zpos"        "0"
         "wide"        "100"
         "tall"        "0"

@@ -516,7 +516,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"CoverBackpack"
-		"xpos"			"125"
+		"xpos"			"cs-0.5"
 		"ypos"			"286"
 		"zpos"			"-5"
 		"wide"			"600"
