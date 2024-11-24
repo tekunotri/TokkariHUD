@@ -117,7 +117,7 @@
 		"font"			"ChalkboardTextBig"
 		"labelText"		"Meet Your"
 		"textAlignment"	"west"
-		"xpos"			"c-355"
+		"xpos"			"c-305"
 		"ypos"			"7"
 		"zpos"			"1"
 		"wide"			"240"
@@ -135,7 +135,7 @@
 		"font"			"ChalkboardTextBig"
 		"labelText"		"#ClassBeingEquipped"
 		"textAlignment"	"west"
-		"xpos"			"c-170"
+		"xpos"			"c-120"
 		"ypos"			"7"
 		"zpos"			"1"
 		"wide"			"240"
@@ -312,7 +312,7 @@
 		"ControlName"	"CExLabel"
 		"fieldName"		"PassiveAttribsLabel"
 		"font"			"ChalkboardText"
-		"xpos"			"c-65"
+		"xpos"			"c-5"
 		"ypos"			"130"
 		"zpos"			"0"	
 		"wide"			"130"
@@ -326,6 +326,8 @@
 		"fgcolor"		"255 215 0 255"
 		"centerwrap"	"1"
 	}
+
+
 	
 	"loadout_preset_panel"
 	{
@@ -469,7 +471,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"RedButton"
-		"xpos"				"c-55"
+		"xpos"				"c-5"
 		"ypos"				"90"
 		"zpos"				"12"	
 		"wide"				"52"
@@ -523,7 +525,7 @@
 	{
 		"ControlName"	"CExImageButton"
 		"fieldName"		"BlueButton"
-		"xpos"				"c1"
+		"xpos"				"c51"
 		"ypos"				"90"
 		"zpos"				"12"	
 		"wide"				"52"

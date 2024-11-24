@@ -519,7 +519,7 @@
 		"xpos"			"cs-0.5"
 		"ypos"			"286"
 		"zpos"			"-5"
-		"wide"			"600"
+		"wide"			"577"
 		"tall"			"70"
 		"visible"		"1"
 		"pinCorner"		"0"
