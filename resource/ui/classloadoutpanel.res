@@ -18,8 +18,8 @@
 		"infocus_bgcolor_override" "46 43 42 0"
 		"outoffocus_bgcolor_override" "46 43 42 0"
 		
-		"item_xpos_offcenter_a"	"-220"
-		"item_xpos_offcenter_b"	"-380"
+		"item_xpos_offcenter_a"	"-380"
+		"item_xpos_offcenter_b"	"-220"
 		"item_ypos"		"60"
 		"item_ydelta"	"75"
 		"item_mod_wide"	"40"

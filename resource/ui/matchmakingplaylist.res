@@ -193,12 +193,31 @@
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			
+			
 			"border_default"	"MainMenuButtonDefault"
 			"border_armed"		"MainMenuButtonArmed"
 			"paintbackground"	"0"
 			"defaultFgColor_override" "46 43 42 255"
 			"armedFgColor_override" "235 226 202 255"
 			"depressedFgColor_override" "46 43 42 255"
+			"image_drawcolor"            "46 43 42 255"
+            "image_armedcolor"           "235 226 202 255"
+			
+			"SubImage"
+            {
+               
+					"ControlName"	"ImagePanel"
+					"fieldName"		"SubImage"
+					"xpos"			"5"
+					"ypos"			"-2"
+					"zpos"			"20"
+					"wide"			"29"
+					"tall"			"29"
+					"visible"		"1"
+					"enabled"		"1"
+					"image"			"glyph_coop"
+					"scaleImage"	"1"
+            }
 		}
 	}	
 	
@@ -250,6 +269,91 @@
 			"defaultFgColor_override" "46 43 42 255"
 			"armedFgColor_override" "235 226 202 255"
 			"depressedFgColor_override" "46 43 42 255"
+			"image_drawcolor"            "46 43 42 255"
+            "image_armedcolor"           "235 226 202 255"
+			
+			"SubImage"
+            {
+               
+					"ControlName"	"ImagePanel"
+					"fieldName"		"SubImage"
+					"xpos"			"5"
+					"ypos"			"4"
+					"zpos"			"20"
+					"wide"			"17"
+					"tall"			"17"
+					"visible"		"1"
+					"enabled"		"1"
+					"image"			"glyph_server"
+					"scaleImage"	"1"
+            }
+		}
+	}	
+	
+	"PracticeButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"PracticeButton"
+		"xpos"			"c110"
+		"ypos"			"402"
+		"zpos"			"160"
+		"wide"			"155"
+		"tall"			"30"
+		"visible"		"1"
+		"enabled"		"1"
+		"PaintBackgroundType"	"0"
+		
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"155"
+			"tall"			"25"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"labelText"		"  Practice Offline"
+			"tabPosition"	"0"
+			"textinsetx"	"25"
+			"command"       "play_training"
+			"use_proportional_insets" "1"
+			"actionsignallevel"	"2"
+			"font"			"HudFontSmallBold"
+			"textAlignment"	"center"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_armed"		"UI/buttonrollover.wav"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			
+			"border_default"	"MainMenuButtonDefault"
+			"border_armed"		"MainMenuButtonArmed"
+			"paintbackground"	"0"
+			"defaultFgColor_override" "46 43 42 255"
+			"armedFgColor_override" "235 226 202 255"
+			"depressedFgColor_override" "46 43 42 255"
+			"image_drawcolor"            "46 43 42 255"
+            "image_armedcolor"           "235 226 202 255"
+			
+			"SubImage"
+            {
+               
+					"ControlName"	"ImagePanel"
+					"fieldName"		"SubImage"
+					"xpos"			"5"
+					"ypos"			"5"
+					"zpos"			"20"
+					"wide"			"15"
+					"tall"			"15"
+					"visible"		"1"
+					"enabled"		"1"
+					"image"			"glyph_practice"
+					"scaleImage"	"1"
+            }
 		}
 	}	
 	
@@ -278,7 +382,7 @@
 			"pinCorner"		"3"
 			"visible"		"1"
 			"enabled"		"1"
-			"labelText"		"+ Create Server"
+			"labelText"		"  Create Server"
 			"tabPosition"	"0"
 			"textinsetx"	"25"
 			"command"       "create_server"
@@ -299,6 +403,24 @@
 			"defaultFgColor_override" "46 43 42 255"
 			"armedFgColor_override" "235 226 202 255"
 			"depressedFgColor_override" "46 43 42 255"
+			"image_drawcolor"            "46 43 42 255"
+            "image_armedcolor"           "235 226 202 255"
+			
+			"SubImage"
+            {
+               
+					"ControlName"	"ImagePanel"
+					"fieldName"		"SubImage"
+					"xpos"			"5"
+					"ypos"			"5"
+					"zpos"			"20"
+					"wide"			"15"
+					"tall"			"15"
+					"visible"		"1"
+					"enabled"		"1"
+					"image"			"glyph_create"
+					"scaleImage"	"1"
+            }
 		}
 	}	
 	
@@ -349,6 +471,25 @@
 			"defaultFgColor_override" "46 43 42 255"
 			"armedFgColor_override" "235 226 202 255"
 			"depressedFgColor_override" "46 43 42 255"
+			"image_drawcolor"            "46 43 42 255"
+            "image_armedcolor"           "235 226 202 255"
+			
+			"SubImage"
+            {
+               
+					"ControlName"	"ImagePanel"
+					"fieldName"		"SubImage"
+					"xpos"			"5"
+					"ypos"			"3"
+					"zpos"			"19"
+					"wide"			"19"
+					"tall"			"19"
+					"visible"		"1"
+					"enabled"		"1"
+					"image"			"glyph_multiplayer"
+					"scaleImage"	"1"
+            }
+			
 		}
 	}	
 	

@@ -18,7 +18,7 @@
 		"enabled" "1"
 		"xpos"	"c221"	[$WIN32]
 		"xpos_minmode"	"r403"	[$WIN32]
-		"ypos"	"c97"	[$WIN32]
+		"ypos"	"c96"	[$WIN32]
 		"ypos_minmode"	"r164"	[$WIN32]
 		"xpos"	"r131"	[$X360]
 		"ypos"	"r77"	[$X360]
@@ -1249,7 +1249,7 @@
 		"ControlName"	"EditablePanel"
 		"fieldName"		"HudAchievementTracker"
 		"xpos"			"5"
-		"NormalY"		"10"
+		"NormalY"		"170"
 		"EngineerY"		"170"
 		"zpos"			"2"
 		"wide"			"280"
